@@ -1,0 +1,24 @@
+.Video{
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10);
+    overflow: hidden;
+    margin-top: 10px;
+}
+.Video__section-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Video__titulo--size-desktop{
+    font-size: 2em;
+    color: #707070;
+}
+.Video__section-video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Video__video--size-desktop{
+    width: 500px;
+    height: 400px;
+}
