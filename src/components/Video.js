@@ -8,8 +8,8 @@ class Video extends React.Component{
                 <h3 className="Video__titulo--size-desktop">{this.props.titulo}</h3>
             </div>
             <div className="Video__section-video">
-                <iframe className="Video__video--size-desktop" type="text/html"
-            src={this.props.enlace} frameborder="0" allowfullscreen="true"></iframe>
+                <iframe title={this.props.titulo} className="Video__video--size-desktop" type="text/html"
+            src={this.props.enlace} frameBorder="0" allowFullScreen={true}></iframe>
             </div>
         </div>
     }
