@@ -12,15 +12,13 @@ class Navbar extends React.Component {
                         <a href="/" className="arrow" id="arrow"></a>
                     </div>
                     <div className="Navbar__logo">
-                        <div className="Navbar__logo--margen">
-                            <img src={logo} alt="logo"/>
-                        </div>
+                        <img className="logo__img" src={logo} alt="logo"/>
                         <div className="Navbar__section-info">
                             <h3 className="Navbar__titulo">
                                 U.E. "Calama"
                             </h3>
                             <div className="Navbar__subtitulo">
-                                subtitulo
+                                {this.props.pagina}
                             </div>
                         </div>
                     </div>  
