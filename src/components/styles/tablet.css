@@ -15,14 +15,32 @@
         width: 40px;
     }
     .Video{
-        height: 130px;
+        height: 180px;
     }
     .Video__titulo{
         font-size: 0.75em;
     }
     .Video__video--size{
-        width: 190px;
-        height: 100px;
+        width: 90%;
+        height: 150px;
+    }
+    .footer__titulo{
+        font-size: .75em;
+    }
+    .red__icono{
+        width: 40px;
+    }
+    .red__titulo{
+        font-size: .75em;
+    }
+    .contacto{
+        flex-direction: column;
+    }
+    .contacto__uno{
+        margin-bottom: 10px;
+    }
+    .contacto__icono{
+        width: 20px;
     }
 }
 @media screen and (min-width:400px){
@@ -47,6 +65,24 @@
     .Video__video--size{
         width: 380px;
         height: 200px;
+    }
+    .footer__titulo{
+        font-size: 1em;
+    }
+    .red__icono{
+        width: 45px;
+    }
+    .red__titulo{
+        font-size: 1em;
+    }
+    .contacto{
+        flex-direction: column;
+    }
+    .contacto__uno{
+        margin-bottom: 10px;
+    }
+    .contacto__icono{
+        width: 25px;
     }
 }
 @media screen and (min-width:600px){
@@ -75,6 +111,21 @@
         width: 500px;
         height: 250px;
     }
+    .footer__titulo{
+        font-size: 1.25em;
+    }
+    .red__icono{
+        width: 50px;
+    }
+    .red__titulo{
+        font-size: 1em;
+    }
+    .contacto{
+        flex-direction: row;
+    }
+    .contacto__icono{
+        width: 20px;
+    }
 }
 @media screen and (min-width:768px){
     .slider{
@@ -98,6 +149,21 @@
     .Video__video--size{
         width: 700px;
         height: 350px;
+    }
+    .footer__titulo{
+        font-size: 1.5em;
+    }
+    .red__icono{
+        width: 55px;
+    }
+    .red__titulo{
+        font-size: 1.25em;
+    }
+    .contacto{
+        flex-direction: row;
+    }
+    .contacto__icono{
+        width: 25px;
     }
 }
 @media screen and (min-width:850px){
@@ -125,5 +191,20 @@
     .Video__video--size{
         width: 700px;
         height: 350px;
+    }
+    .footer__titulo{
+        font-size: 1.75em;
+    }
+    .red__icono{
+        width: 60px;
+    }
+    .red__titulo{
+        font-size: 1.5em;
+    }
+    .contacto{
+        flex-direction: row;
+    }
+    .contacto__icono{
+        width: 30px;
     }
 }
