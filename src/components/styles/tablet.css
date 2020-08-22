@@ -2,18 +2,7 @@
     .slider{
         height: 200px;
     }
-    .Navbar__titulo{
-        font-size:0.75em;
-    }
-    .Navbar__subtitulo{
-        font-size:0.6em;
-    }
-    .Navbar{
-        height: 50px;
-    }
-    .logo__img{
-        width: 40px;
-    }
+    
     .Video{
         height: 180px;
     }
@@ -53,15 +42,7 @@
     .slider{
         height: 300px;
     }
-    .Navbar__titulo{
-        font-size:0.9em;
-    }
-    .Navbar__subtitulo{
-        font-size:0.75em;
-    }
-    .Navbar{
-        height: 60px;
-    }
+    
     .Video{
         height: 250px;
     }
@@ -100,18 +81,7 @@
     .slider{
         height: 450px;
     }
-    .Navbar__titulo{
-        font-size:1em;
-    }
-    .Navbar__subtitulo{
-        font-size:0.9em;
-    }
-    .Navbar{
-        height: 70px;
-    }
-    .logo__img{
-        width: 60px;
-    }
+    
     .Video{
         height: 320px;
     }
@@ -142,20 +112,14 @@
         top:60px;
         right:60px
     }
+    
+
 }
 @media screen and (min-width:768px){
     .slider{
         height: 550px;
     }
-    .Navbar__titulo{
-        font-size:1.125em;
-    }
-    .Navbar__subtitulo{
-        font-size:1em;
-    }
-    .Navbar{
-        height: 80px;
-    }
+    
     .Video{
         height: 420px;
     }
@@ -182,61 +146,12 @@
         width: 25px;
     }
 
-    /* navbar2 */
-    .line{
-        width: 30px;
-        height: 3px;
-        background: white;
-        margin: 5px;
-    }
-    .navbar{
-        position: relative;
-    }
-    .hamburger{
-        position: absolute;
-        cursor: pointer;
-        right: 5%;
-        top: 50%;
-        transform: translate(-5%,-50%);
-        z-index: 2;
-    }
-    .nav-links{
-        position: fixed;
-        background: cornflowerblue;
-        height: 100vh;
-        width: 100%;
-        z-index: 1;
-        flex-direction: column;
-        /* display: none; */
-        clip-path: circle(1000px at 90% -10%);
-        -webkit-clip-path: circle(100px at 90% -10%);
-        transition: all 1s ease-out;
-        pointer-events: none;
-    }
-    .nav-links.open{
-        clip-path: circle(1000px at 90% -10%);
-        -webkit-clip-path: circle(1000px at 90% -10%);
-        pointer-events: all;
-    }
-
-
 }
 @media screen and (min-width:850px){
     .slider{
         height: 600px;
     }
-    .Navbar__titulo{
-        font-size:1.5em;
-    }
-    .Navbar__subtitulo{
-        font-size:1.125em;
-    }
-    .Navbar{
-        height: 90px;
-    }
-    .logo__img{
-        width: 80px;
-    }
+
     .Video{
         height: 420px;
     }
