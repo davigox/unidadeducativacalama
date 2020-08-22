@@ -10,6 +10,7 @@ class VirtualClasses extends React.Component {
 		return (
 			<React.Fragment>
 				<div className="lista">
+						<h1>Clase virtuales</h1>
 					<div className="list__container">
 						<ClassesList/>
 					</div>

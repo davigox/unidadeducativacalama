@@ -2,7 +2,13 @@
     .slider{
         height: 700px;
     }
-    
+
+    .navbar__titulo{
+        font-size: 2em;
+    }
+    .nav-links__pages li a, .nav-links__admin li a{
+        font-size: 1.75em;
+    }
     .Video{
         height: 480px;
     }

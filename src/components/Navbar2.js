@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import {Link} from 'react-router-dom'
 
 import './styles/Navbar2.css';
 import menu_arrow from '../images/menu-arrow.svg'
@@ -20,7 +21,7 @@ class Navbar2 extends React.Component {
                 <nav className="navbar">
                     <div className="navbar__back">
                         {/* eslint-disable-next-line */}
-                        <a href="/" className="arrow" id="arrow"></a>
+                        <Link to="/" className="arrow" id="arrow"></Link>
                     </div>
                     <div className="navbar__logo">
                         <img className="logo__img" src={logo} alt="logo" />
@@ -44,14 +45,14 @@ class Navbar2 extends React.Component {
 
                         </div>
                     </div>
-                    <ul className={this.state.isCliked ? "nav-links nav-links--open" : "nav-links"}>
+                    <ul onClick={this.handleClick} className={this.state.isCliked ? "nav-links nav-links--open" : "nav-links"}>
                         <div className="nav-links__pages">
                             <li><a href="#">Iniciar sesión <img src={menu_arrow} alt="Menu Arrow" /></a></li>
-                            <li><a href="#">Página Principal <img src={menu_arrow} alt="Menu Arrow" /></a></li>
-                            <li><a href="#">Clases Virtuales <img src={menu_arrow} alt="Menu Arrow" /></a></li>
-                            <li><a href="#">Horarios <img src={menu_arrow} alt="Menu Arrow" /></a></li>
-                            <li><a href="#">Plantel Docente <img src={menu_arrow} alt="Menu Arrow" /></a></li>
-                            <li><a href="#">Calificaciones <img src={menu_arrow} alt="Menu Arrow" /></a></li>
+                            <li><Link to="/">Página Principal <img src={menu_arrow} alt="Menu Arrow" /></Link></li>
+                            <li><Link to="/clasesvirtuales">Clases Virtuales <img src={menu_arrow} alt="Menu Arrow" /></Link></li>
+                            <li><Link to="/horarios">Horarios <img src={menu_arrow} alt="Menu Arrow" /></Link></li>
+                            <li><Link to="/profesores">Plantel Docente <img src={menu_arrow} alt="Menu Arrow" /></Link></li>
+                            <li><Link to="/calificaciones">Calificaciones <img src={menu_arrow} alt="Menu Arrow" /></Link></li>
                             <li><a className="nav-links2" href="#">Mis Datos <img src={menu_arrow} alt="Menu Arrow" /></a></li>
                         </div>
                         <div className="nav-links__admin">

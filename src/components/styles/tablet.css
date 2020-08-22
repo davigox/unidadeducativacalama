@@ -2,7 +2,18 @@
     .slider{
         height: 200px;
     }
-    
+    .logo__img{
+        width: 40px;
+    }
+    .navbar__titulo{
+        font-size: 1em;
+    }
+    .line{
+        width: 30px;
+    }
+    .nav-links__pages li a, .nav-links__admin li a{
+        font-size: 1em;
+    }
     .Video{
         height: 180px;
     }
@@ -42,7 +53,18 @@
     .slider{
         height: 300px;
     }
-    
+    .logo__img{
+        width: 50px;
+    }
+    .navbar__titulo{
+        font-size: 1.25em;
+    }
+    .line{
+        width: 40px;
+    }
+    .nav-links__pages li a, .nav-links__admin li a{
+        font-size: 1.25em;
+    }
     .Video{
         height: 250px;
     }
@@ -81,7 +103,18 @@
     .slider{
         height: 450px;
     }
-    
+    .logo__img{
+        width: 60px;
+    }
+    .navbar__titulo{
+        font-size: 1.5em;
+    }
+    .line{
+        width: 45px;
+    }
+    .nav-links__pages li a, .nav-links__admin li a{
+        font-size: 1.5em;
+    }
     .Video{
         height: 320px;
     }
@@ -119,7 +152,18 @@
     .slider{
         height: 550px;
     }
-    
+    .logo__img{
+        width: 60px;
+    }
+    .navbar__titulo{
+        font-size: 1.5em;
+    }
+    .line{
+        width: 50px;
+    }
+    .nav-links__pages li a, .nav-links__admin li a{
+        font-size: 1.75em;
+    }
     .Video{
         height: 420px;
     }
@@ -151,7 +195,15 @@
     .slider{
         height: 600px;
     }
-
+    .logo__img{
+        width: 62px;
+    }
+    .navbar__titulo{
+        font-size: 1.75em;
+    }
+    .line{
+        width: 50px;
+    }
     .Video{
         height: 420px;
     }
