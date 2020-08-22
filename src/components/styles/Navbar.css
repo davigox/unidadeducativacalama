@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: space-around;
     height: 100px;
+
 }
 .Navbar__logo{
     display: flex;
@@ -27,7 +28,7 @@
     height:50px;
     margin-left:auto;
     position:relative;
-    z-index:30;
+    z-index:40;
     cursor:pointer
 }
 .burger-btn i{
@@ -52,7 +53,7 @@
     left:12.5px
 }
 .burger-btn--active i{
-    background:#0088f6
+    background:#ff2222
 }
 .burger-btn--active i:first-child{
     top:25px;
@@ -106,4 +107,70 @@
 .arrow.go:after,.arrow.go:before{
     transform:translate(-200%);
     opacity:0
+}
+.Navbar__btn{
+    order:3
+}
+.navbar__menu{
+    display: none;
+}
+.menu{
+    font-size:1.5em;
+    font-weight: 600;
+}
+.menu-container{
+    padding-right: 25px;
+    position: fixed;
+    right: 40px;
+    top: 90px;
+    bottom: 0;
+    z-index: 30;
+    text-align: right;
+    overflow-y: auto;
+}
+.menu-container a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    transform: translateY(200%);
+    will-change: transform;
+}
+.menu-container img{
+    transition: all 200ms;
+}
+.menu a{
+    color: #FFFFFF;
+}
+.menu__item{
+    margin:0 0 15px;
+    overflow:hidden
+}
+.menu a img{
+    margin-left: 10px;
+    opacity: 0.4;
+}
+.menu a:hover img{
+    opacity:1
+}
+.menu--active{
+    display:block
+}
+.blur{
+    display:none;
+    -webkit-backdrop-filter:blur(20px);
+    backdrop-filter:blur(20px);
+    background:rgba(0,0,0,0.6);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:20
+}
+.blur--active{
+    display:block
+}
+.overflow--hidden{
+    overflow:hidden
 }

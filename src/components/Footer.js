@@ -13,11 +13,11 @@ class Footer extends React.Component {
             <footer className="footer">
                 <h3 className="footer__titulo">Contactos para información:</h3>
                 <div className="red">
-                    <a target="_blank" className="red__uno" href="https://www.youtube.com/channel/UCjRgxPrsLdFjrLmkGktc6Gw?view_as=subscriber">
+                    <a target="_blank" rel="noopener noreferrer" className="red__uno" href="https://www.youtube.com/channel/UCjRgxPrsLdFjrLmkGktc6Gw?view_as=subscriber">
                         <img className="red__icono" src={youtube} alt="youtube" />
                         <h3 className="red__titulo">YouTube</h3>
                     </a>
-                    <a target="_blank" className="red__uno" href="https://www.facebook.com/david.g.cusiquispe">
+                    <a target="_blank" rel="noopener noreferrer" className="red__uno" href="https://www.facebook.com/david.g.cusiquispe">
                         <img className="red__icono" src={facebook} alt="facebook" />
                         <h3 className="red__titulo">Facebook</h3>
                     </a>
