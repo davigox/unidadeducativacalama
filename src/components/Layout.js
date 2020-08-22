@@ -1,12 +1,10 @@
 import React from 'react';
-import Navbar from './Navbar';
+import Navbar2 from './Navbar2';
 
 function Layout (props) {
     return (
         <div>
-            <Navbar
-                    pagina="Plataforma de Clases Virtuales"
-                />
+            <Navbar2 />
             {props.children} 
 
         </div>

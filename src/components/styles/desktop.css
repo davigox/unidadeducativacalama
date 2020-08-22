@@ -33,41 +33,12 @@
     .contacto__icono{
         width: 35px;
     }
-    /* .burger-btn{
-        width:60px;
-        height:60px;
-        position:fixed;
-        top:40px
-    }
-    .burger-btn i{
-        width:100%
-    }
-    .burger-btn i:first-child{
-        top:20px
-    }
-    .burger-btn i:nth-child(2){
-        width:45px;
-        top:28.5px;
-        left:7.5px
-    }
-    .burger-btn i:last-child{
-        width:30px;
-        bottom:20px;
-        left:15px
-    }
-    .burger-btn--active i:first-child{
-        top:30px
-    }
-    .burger-btn--active i:last-child{
-        width:100%;
-        bottom:27px;
-        left:0
-    } */
     .menu-container{
         padding-right:70px;
         top:120px;
         /* right:unset */
     }
+    
 }
 @media screen and (min-width:1100px){
     .slider{
