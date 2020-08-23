@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom'
 
 import './styles/Navbar2.css';
@@ -47,20 +47,20 @@ class Navbar2 extends React.Component {
                     </div>
                     <ul onClick={this.handleClick} className={this.state.isCliked ? "nav-links nav-links--open" : "nav-links"}>
                         <div className="nav-links__pages">
-                            <li><a href="#">Iniciar sesión <img src={menu_arrow} alt="Menu Arrow" /></a></li>
+                            <li><Link to="/login">Iniciar sesión <img src={menu_arrow} alt="Menu Arrow" /></Link></li>
                             <li><Link to="/">Página Principal <img src={menu_arrow} alt="Menu Arrow" /></Link></li>
                             <li><Link to="/clasesvirtuales">Clases Virtuales <img src={menu_arrow} alt="Menu Arrow" /></Link></li>
                             <li><Link to="/horarios">Horarios <img src={menu_arrow} alt="Menu Arrow" /></Link></li>
                             <li><Link to="/profesores">Plantel Docente <img src={menu_arrow} alt="Menu Arrow" /></Link></li>
                             <li><Link to="/calificaciones">Calificaciones <img src={menu_arrow} alt="Menu Arrow" /></Link></li>
-                            <li><a className="nav-links2" href="#">Mis Datos <img src={menu_arrow} alt="Menu Arrow" /></a></li>
+                            <li><Link className="nav-links2" to="#">Mis Datos <img src={menu_arrow} alt="Menu Arrow" /></Link></li>
                         </div>
                         <div className="nav-links__admin">
-                            <li><a href="#">Materias y Cursos <img src={menu_arrow} alt="Menu Arrow" /></a></li>
-                            <li><a href="#">Registrar Calificaciones <img src={menu_arrow} alt="Menu Arrow" /></a></li>
-                            <li><a href="#">Registrar Docentes <img src={menu_arrow} alt="Menu Arrow" /></a></li>
-                            <li><a href="#">Registrar Cursos <img src={menu_arrow} alt="Menu Arrow" /></a></li>
-                            <li><a href="#">Registrar Calificaciones <img src={menu_arrow} alt="Menu Arrow" /></a></li>
+                            <li><Link to="#">Materias y Cursos <img src={menu_arrow} alt="Menu Arrow" /></Link></li>
+                            <li><Link to="#">Registrar Calificaciones <img src={menu_arrow} alt="Menu Arrow" /></Link></li>
+                            <li><Link to="#">Registrar Docentes <img src={menu_arrow} alt="Menu Arrow" /></Link></li>
+                            <li><Link to="#">Registrar Cursos <img src={menu_arrow} alt="Menu Arrow" /></Link></li>
+                            <li><Link to="#">Registrar Calificaciones <img src={menu_arrow} alt="Menu Arrow" /></Link></li>
                         </div>
                     </ul>
                 </nav>

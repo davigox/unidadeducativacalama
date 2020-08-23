@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar2 from '../components/Navbar';
 import Slider from '../components/Slider';
 import Video from '../components/Video';
 import Footer from '../components/Footer'
@@ -7,6 +6,7 @@ import '../components/styles/tablet.css';
 import '../components/styles/desktop.css';
 
 class Home extends React.Component {
+
     render() {
         return (
             <React.Fragment>

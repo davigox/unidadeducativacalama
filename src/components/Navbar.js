@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 // import {Link} from 'react-router-dom';
 import logo from '../images/logo.svg';
 import './styles/Navbar.css';
@@ -16,7 +16,6 @@ class Navbar extends React.Component {
         document.getElementById('body').classList.toggle('overflow--hidden');
     }
     render(){
-        let body= document.getElementById("body");
         console.log(this.state.isSitchedOn);
         return (
             <React.Fragment>
