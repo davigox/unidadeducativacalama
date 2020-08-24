@@ -5,6 +5,7 @@
     width: 100%;
     height: 40px;
     border-bottom: 3px solid #C2CBD2 ;
+    cursor: pointer;
 }
 .curso__text{
     width: 50%;

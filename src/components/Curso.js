@@ -7,7 +7,7 @@ class Curso extends Component {
         return (
             <div className={"curso " + this.props.color}>
                 <h3 className="curso__text">
-                    {this.props.nombre}
+                    {this.props.nombre} {this.props.paralelo}
                 </h3>
                 <h3 className="curso__text">
                     {this.props.profesor}
