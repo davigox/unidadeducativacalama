@@ -1,4 +1,4 @@
-.curso{
+.curso-edit{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -7,116 +7,136 @@
     border-bottom: 3px solid #C2CBD2 ;
     cursor: pointer;
 }
-.curso__text1{
+.curso-edit__container1{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    
+}
+.curso-edit__container2{
+    display: flex;
+    width: 65%;
+    height: auto;
+    box-sizing: border-box;
+    justify-content: flex-end;
+}
+.curso-edit__img{
+    padding-right: 20px;
+}
+.curso-edit__text1{
+    display: flex;
     width: 30%;
     margin-left: 20px;
     text-align: left;
     font-weight: 400;
     font-size: 1.5em;
 }
-.curso__text2{
-    width: 70%;
+.curso-edit__text1 div:nth-child(2){
     margin-left: 10px;
+}
+.curso-edit__text2{
+    width: 70%;
+    margin-left: 20px;
     text-align: left;
     font-weight: 400;
     font-size: 1.5em;
 }
 @media screen and (min-width:200px){
-    .curso{
+    .curso-edit{
         height: 60px;
     }
-    .curso__text1{
+    .curso-edit__text1{
         font-size: .85em;
     }
-    .curso__text2{
+    .curso-edit__text2{
         font-size: .85em;
     }
 }
 @media screen and (min-width:400px){
-    .curso{
+    .curso-edit{
         height: 60px;
     }
-    .curso__text1{
+    .curso-edit__text1{
         font-size: .9em;
     }
-    .curso__text2{
+    .curso-edit__text2{
         font-size: .9em;
     }
 }
 @media screen and (min-width:600px){
-    .curso{
+    .curso-edit{
         height: 60px;
     }
-    .curso__text1{
+    .curso-edit__text1{
         font-size: 1em;
     }
-    .curso__text2{
+    .curso-edit__text2{
         font-size: 1em;
     }
 }
 @media screen and (min-width:768px){
-    .curso{
+    .curso-edit{
         height: 70px;
     }
-    .curso__text1{
+    .curso-edit__text1{
         font-size: 1.25em;
     }
-    .curso__text2{
+    .curso-edit__text2{
         font-size: 1.25em;
     }
 }
 @media screen and (min-width:850px){
-    .curso{
+    .curso-edit{
         height: 70px;
     }
-    .curso__text1{
+    .curso-edit__text1{
         font-size: 1.25em;
     }
-    .curso__text2{
+    .curso-edit__text2{
         font-size: 1.25em;
     }
 }
 @media screen and (min-width:1024px){
-    .curso{
+    .curso-edit{
         height: 70px;
     }
-    .curso__text1{
+    .curso-edit__text1{
         font-size: 1.5em;
     }
-    .curso__text2{
+    .curso-edit__text2{
         font-size: 1.5em;
     }
 }
 @media screen and (min-width:1100px){
-    .curso{
+    .curso-edit{
         height: 80px;
     }
-    .curso__text1{
+    .curso-edit__text1{
         font-size: 1.5em;
     }
-    .curso__text2{
+    .curso-edit__text2{
         font-size: 1.5em;
     }
 }
 @media screen and (min-width:1240px){
-    .curso{
+    .curso-edit{
         height: 90px;
     }  
-    .curso__text1{
+    .curso-edit__text1{
         font-size: 1.5em;
     }
-    .curso__text2{
+    .curso-edit__text2{
         font-size: 1.5em;
     }
 }
 @media screen and (min-width:1440px){
-    .curso{
+    .curso-edit{
         height: 100px;
     }
-    .curso__text1{
+    .curso-edit__text1{
         font-size: 1.75em;
     }
-    .curso__text2{
+    .curso-edit__text2{
         font-size: 1.75em;
     }
 }

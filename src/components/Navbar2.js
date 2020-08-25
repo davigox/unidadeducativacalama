@@ -56,10 +56,10 @@ class Navbar2 extends React.Component {
                             <li><Link className="nav-links2" to="#">Mis Datos <img src={menu_arrow} alt="Menu Arrow" /></Link></li>
                         </div>
                         <div className="nav-links__admin">
-                            <li><Link to="#">Materias y Cursos <img src={menu_arrow} alt="Menu Arrow" /></Link></li>
+                            <li><Link to="editarclasesvirtuales">Editar Clases Virtuales <img src={menu_arrow} alt="Menu Arrow" /></Link></li>
                             <li><Link to="#">Registrar Calificaciones <img src={menu_arrow} alt="Menu Arrow" /></Link></li>
                             <li><Link to="#">Registrar Docentes <img src={menu_arrow} alt="Menu Arrow" /></Link></li>
-                            <li><Link to="#">Registrar Cursos <img src={menu_arrow} alt="Menu Arrow" /></Link></li>
+                            <li><Link to="/registrarcursos">Registrar Cursos <img src={menu_arrow} alt="Menu Arrow" /></Link></li>
                             <li><Link to="#">Registrar Calificaciones <img src={menu_arrow} alt="Menu Arrow" /></Link></li>
                         </div>
                     </ul>

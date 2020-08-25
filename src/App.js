@@ -8,6 +8,8 @@ import VirtualClasses from './pages/VirtualClasses';
 import Schedules from './pages/Schedules';
 import Teachers from './pages/Teachers';
 import Qualifications from './pages/Qualifications';
+import RegisterCourses from './pages/RegisterCourses';
+import VirtualClassesEdit from './pages/VirtualClassesEdit';
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
         <Route exact path="/horarios" component={Schedules} />
         <Route exact path="/profesores" component={Teachers} />
         <Route exact path="/calificaciones" component={Qualifications} />
+        <Route exact path="/registrarcursos" component={RegisterCourses} />
+        <Route exact path="/editarclasesvirtuales" component={VirtualClassesEdit} />
         
         <Route component={NotFound} />
       </Switch>
