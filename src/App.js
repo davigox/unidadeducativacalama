@@ -9,6 +9,7 @@ import Schedules from './pages/Schedules';
 import Teachers from './pages/Teachers';
 import Qualifications from './pages/Qualifications';
 import RegisterCourses from './pages/RegisterCourses';
+import CursoDetails from './components/CursoDetails'
 import VirtualClassesEdit from './pages/VirtualClassesEdit';
 
 
@@ -23,6 +24,7 @@ function App() {
         <Route exact path="/profesores" component={Teachers} />
         <Route exact path="/calificaciones" component={Qualifications} />
         <Route exact path="/registrarcursos" component={RegisterCourses} />
+        <Route exact path="/registrarcursos/:cursoId" component={CursoDetails} />
         <Route exact path="/editarclasesvirtuales" component={VirtualClassesEdit} />
         
         <Route component={NotFound} />

@@ -5,6 +5,10 @@ import editar from '../images/editar.svg'
 import borrar from '../images/borrar.svg'
 
 export default class CursoEdit extends Component {
+    handleClick = e => {
+        this.props.deleteCourse(this.props.id)
+        // console.log(this.props.id)
+    }
     render() {
         return (
             
@@ -15,13 +19,16 @@ export default class CursoEdit extends Component {
                         <div>{ this.props.paralelo}</div>
                     </h3>
                     <h3 className="curso-edit__text2">
-                        {this.props.materia}
+                        {this.props.asesor}
                     </h3>
                 </div>
                 <div className="curso-edit__container2">
                     <img className="curso-edit__img" src={editar} alt="editar" />
-                    <img className="curso-edit__img" src={borrar} alt="borrar" />
+                    <img className="curso-edit__img" src={borrar} alt="borrar"
+                        onClick={this.handleClick}
+                    />
                 </div>
+
             </div>
                 
         )

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import {Link, withRouter} from 'react-router-dom'
 
 import './styles/Navbar2.css';
 import menu_arrow from '../images/menu-arrow.svg'
@@ -15,13 +15,17 @@ class Navbar2 extends React.Component {
         })
         console.log(this.state.isCliked)
     }
+    handleButtonBack = (e) => {
+        this.props.history.goBack();
+        console.log("back")
+    }
     render() {
         return (
             <React.Fragment>
                 <nav className="navbar">
                     <div className="navbar__back">
                         {/* eslint-disable-next-line */}
-                        <Link to="/" className="arrow" id="arrow"></Link>
+                        <i onClick={(e) => this.handleButtonBack(e)} className="arrow" id="arrow"></i>
                     </div>
                     <div className="navbar__logo">
                         <img className="logo__img" src={logo} alt="logo" />
@@ -68,4 +72,4 @@ class Navbar2 extends React.Component {
         )
     }
 };
-export default Navbar2;
+export default withRouter(Navbar2);
