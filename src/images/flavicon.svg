@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="725.007" height="782.376" viewBox="0 0 725.007 782.376">
+  <g id="flavicon" transform="translate(-477 -114.428)">
+    <circle id="Elipse_1" data-name="Elipse 1" cx="221" cy="221" r="221" transform="translate(739 149)" fill="#feba32"/>
+    <circle id="Elipse_2" data-name="Elipse 2" cx="221" cy="221" r="221" transform="translate(759 448)" fill="#feba32"/>
+    <circle id="Elipse_3" data-name="Elipse 3" cx="221" cy="221" r="221" transform="translate(477 326)" fill="#feba32"/>
+    <path id="Trazado_1" data-name="Trazado 1" d="M824.768,295c104.072-51.476,174.739,12.555,203.006,46.454s44.969,85.374,20.557,144.383-64.242,89.141-123.345,99.185-114.351-26.366-129.769-45.2-30.836-76.586,0-104.207,57.818-28.877,88.654-31.388,62.777,14.714,75.806,40.176" transform="translate(-10.391 516.079) rotate(-16)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="50"/>
+    <path id="Trazado_2" data-name="Trazado 2" d="M824.739,295c104.009-51.476,174.633,12.555,202.883,46.454s44.942,85.374,20.545,144.383-64.2,89.141-123.271,99.185-114.282-26.366-129.691-45.2-30.818-76.586,0-104.207,57.783-28.877,88.6-31.388,62.74,14.714,75.76,40.176" transform="matrix(-0.208, 0.978, -0.978, -0.208, 1318.37, -261.494)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="50"/>
+    <path id="Trazado_3" data-name="Trazado 3" d="M824.86,295c104.276-51.476,175.08,12.555,203.4,46.454s45.057,85.374,20.6,144.383-64.368,89.141-123.586,99.185-114.575-26.366-130.023-45.2-30.9-76.586,0-104.207,57.931-28.877,88.827-31.388,62.9,14.714,75.954,40.176" transform="matrix(-0.788, -0.616, 0.616, -0.788, 1418.237, 1264.992)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="50"/>
+  </g>
+</svg>

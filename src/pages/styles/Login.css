@@ -1,0 +1,332 @@
+.login__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login__titulo{
+    width: 40%;
+    height: 50px;
+    background: #161616;
+    box-sizing: border-box;
+    color: #fffefe;
+    margin-top: 10px;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login__centrado{
+    width: 40%;
+    background: #fffefe;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.login__form{
+    display: flex;
+    flex-direction: column;
+
+}
+.login__form--label{
+    box-sizing: border-box;
+    color: #252525;
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-weight: 700;
+}
+.login__form--input{
+    background: rgba(255, 255, 255, 1);
+    height: 40px;
+    font-size: 20px;
+    color: #161616;
+    margin-bottom: 10px;
+    outline: none;
+    border: 2px solid rgba(53, 53, 53, 0.6);
+    border-radius: 5px;
+}
+.login__form--button{
+    width: 30%;
+    background: #CC2030;
+    height: 40px;
+    font-size: 20px;
+    color: #fffefe;
+    outline: none;
+    border: 2px solid #CC2030;
+    border-radius: 5px;
+    margin-right: 0px;
+    margin-left: auto;
+}
+.login__form--button:hover{
+    cursor: pointer;
+    background: #cc182a;
+}
+.error{
+    color: #cc182a;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+@media screen and (min-width:200px){
+    .login__container{
+        width: 100%;
+    }
+    .login__titulo{
+        width: 90%;
+        height: 30px;
+        font-size: 1em;
+    }
+    .login__centrado{
+        width: 90%;
+    }
+    .login__form{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .login__form--label{
+        font-size: .75em;
+    }
+    .login__form--input{
+        height: 30px;
+        font-size: .75em;
+    }
+    .login__form--button{
+        width: 80%;
+        height: 30px;
+        font-size: .8em;
+    }
+}
+@media screen and (min-width:400px){
+    .login__container{
+        width: 100%;
+    }
+    .login__titulo{
+        width: 90%;
+        height: 35px;
+        font-size: 1em;
+    }
+    .login__centrado{
+        width: 90%;
+    }
+    .login__form{
+        display: flex;
+        flex-direction: column;
+    }
+    .login__form--label{
+        font-size: 1em;
+    }
+    .login__form--input{
+        height: 35px;
+        font-size: 1em;
+    }
+    .login__form--button{
+        width: 60%;
+        height: 35px;
+        font-size: 1.2em;
+    }
+}
+@media screen and (min-width:600px){
+    .login__container{
+        width: 100%;
+    }
+    .login__titulo{
+        width: 70%;
+        height: 35px;
+        font-size: 1em;
+    }
+    .login__centrado{
+        width: 70%;
+    }
+    .login__form{
+        display: flex;
+        flex-direction: column;
+    }
+    .login__form--label{
+        font-size: 1em;
+    }
+    .login__form--input{
+        height: 35px;
+        font-size: 1em;
+    }
+    .login__form--button{
+        width: 50%;
+        height: 35px;
+        font-size: 1.2em;
+    }
+}
+@media screen and (min-width:768px){
+    .login__container{
+        width: 100%;
+    }
+    .login__titulo{
+        width: 70%;
+        height: 35px;
+        font-size: 1.25em;
+    }
+    .login__centrado{
+        width: 70%;
+    }
+    .login__form{
+        display: flex;
+        flex-direction: column;
+    }
+    .login__form--label{
+        font-size: 1.2em;
+    }
+    .login__form--input{
+        height: 35px;
+        font-size: 1.2em;
+    }
+    .login__form--button{
+        width: 40%;
+        height: 35px;
+        font-size: 1.5em;
+    }
+}
+@media screen and (min-width:850px){
+    .login__container{
+        width: 100%;
+    }
+    .login__titulo{
+        width: 70%;
+        height: 35px;
+        font-size: 1.25em;
+    }
+    .login__centrado{
+        width: 70%;
+    }
+    .login__form{
+        display: flex;
+        flex-direction: column;
+    }
+    .login__form--label{
+        font-size: 1.2em;
+    }
+    .login__form--input{
+        height: 35px;
+        font-size: 1.2em;
+    }
+    .login__form--button{
+        width: 40%;
+        height: 35px;
+        font-size: 1.5em;
+    }
+}
+@media screen and (min-width:1024px){
+    .login__container{
+        width: 100%;
+    }
+    .login__titulo{
+        width: 60%;
+        height: 40px;
+        font-size: 1.5em;
+    }
+    .login__centrado{
+        width: 60%;
+    }
+    .login__form{
+        display: flex;
+        flex-direction: column;
+    }
+    .login__form--label{
+        font-size: 1.2em;
+    }
+    .login__form--input{
+        height: 40px;
+        font-size: 1.2em;
+    }
+    .login__form--button{
+        width: 30%;
+        height: 40px;
+        font-size: 1.5em;
+    }
+}
+@media screen and (min-width:1100px){
+    .login__container{
+        width: 100%;
+    }
+    .login__titulo{
+        width: 60%;
+        height: 40px;
+        font-size: 1.5em;
+    }
+    .login__centrado{
+        width: 60%;
+    }
+    .login__form{
+        display: flex;
+        flex-direction: column;
+    }
+    .login__form--label{
+        font-size: 1.2em;
+    }
+    .login__form--input{
+        height: 40px;
+        font-size: 1.2em;
+    }
+    .login__form--button{
+        width: 30%;
+        height: 40px;
+        font-size: 1.5em;
+    }
+}
+@media screen and (min-width:1240px){
+    .login__container{
+        width: 100%;
+    }
+    .login__titulo{
+        width: 50%;
+        height: 40px;
+        font-size: 1.5em;
+    }
+    .login__centrado{
+        width: 50%;
+    }
+    .login__form{
+        display: flex;
+        flex-direction: column;
+    }
+    .login__form--label{
+        font-size: 1.2em;
+    }
+    .login__form--input{
+        height: 40px;
+        font-size: 1.2em;
+    }
+    .login__form--button{
+        width: 30%;
+        height: 40px;
+        font-size: 1.5em;
+    }
+}
+@media screen and (min-width:1440px){
+    .login__container{
+        width: 100%;
+    }
+    .login__titulo{
+        width: 50%;
+        height: 40px;
+        font-size: 1.5em;
+    }
+    .login__centrado{
+        width: 50%;
+    }
+    .login__form{
+        display: flex;
+        flex-direction: column;
+    }
+    .login__form--label{
+        font-size: 1.2em;
+    }
+    .login__form--input{
+        height: 40px;
+        font-size: 1.2em;
+    }
+    .login__form--button{
+        width: 30%;
+        height: 40px;
+        font-size: 1.5em;
+    }
+}

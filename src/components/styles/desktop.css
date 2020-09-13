@@ -1,14 +1,5 @@
 @media screen and (min-width:1024px){
-    .slider{
-        height: 700px;
-    }
-
-    .navbar__titulo{
-        font-size: 2em;
-    }
-    .nav-links__pages li a, .nav-links__admin li a{
-        font-size: 1.75em;
-    }
+   
     .Video{
         height: 480px;
     }
@@ -42,10 +33,6 @@
 
 }
 @media screen and (min-width:1100px){
-    .slider{
-        height: 800px;
-    }
-    
     .Video{
         height: 580px;
     }
@@ -74,10 +61,6 @@
 
 }
 @media screen and (min-width:1240px){
-    .slider{
-        height: 900px;
-    }
-    
     .Video{
         height: 800px;
     }
@@ -106,10 +89,6 @@
 
 }
 @media screen and (min-width:1440px){
-    .slider{
-        height: 1000px;
-    }
-   
     .video{
         height: 800px;
     }
@@ -135,6 +114,5 @@
     .contacto__icono{
         width: 50px;
     }
-
 
 }

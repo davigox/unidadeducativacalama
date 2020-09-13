@@ -3,7 +3,7 @@ import React from 'react';
 import CursoEdit from '../components/CursoEdit'
 import Header from '../components/Header';
 import CursoForm from '../components/CursoForm';
-import { db } from '../firebase'
+import { db } from '../firebase';
 import '../components/styles/utilities.css';
 import '../components/styles/tablet.css';
 import '../components/styles/desktop.css';

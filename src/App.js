@@ -11,27 +11,54 @@ import Qualifications from './pages/Qualifications';
 import RegisterCourses from './pages/RegisterCourses';
 import CursoDetails from './components/CursoDetails'
 import VirtualClassesEdit from './pages/VirtualClassesEdit';
+import Login from './pages/Login';
+import CreateUser from './pages/CreateUser';
+import { connect } from 'react-redux';
+import { loginRequest } from './actions';
+import { auth } from './firebase';
 
 
-function App() {
-  return (
-    <BrowserRouter>
-    <Layout>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/clasesvirtuales" component={VirtualClasses} />
-        <Route exact path="/horarios" component={Schedules} />
-        <Route exact path="/profesores" component={Teachers} />
-        <Route exact path="/calificaciones" component={Qualifications} />
-        <Route exact path="/registrarcursos" component={RegisterCourses} />
-        <Route exact path="/registrarcursos/:cursoId" component={CursoDetails} />
-        <Route exact path="/editarclasesvirtuales" component={VirtualClassesEdit} />
-        
-        <Route component={NotFound} />
-      </Switch>
-    </Layout>
-    </BrowserRouter>
-  )
+class App extends React.Component {
+  componentDidMount() {
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+       console.log("con user ", user)
+       this.props.loginRequest(user)
+      } else {
+        console.log("no user")
+        this.props.loginRequest(false)
+      }
+    });
+  }
+
+  render() {
+    return (
+
+      <BrowserRouter>
+        <Layout>
+
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/createuser" component={CreateUser} />
+            <Route exact path="/clasesvirtuales" component={VirtualClasses} />
+            <Route exact path="/horarios" component={Schedules} />
+            <Route exact path="/profesores" component={Teachers} />
+            <Route exact path="/calificaciones" component={Qualifications} />
+            <Route exact path="/registrarcursos" component={RegisterCourses} />
+            <Route exact path="/registrarcursos/:cursoId" component={CursoDetails} />
+            <Route exact path="/editarclasesvirtuales" component={VirtualClassesEdit} />
+
+            <Route component={NotFound} />
+          </Switch>
+        </Layout>
+      </BrowserRouter>
+    )
+  }
 }
+const mapDispatchToProps = {
+  loginRequest,
+};
 
-export default App;
+
+export default connect(null, mapDispatchToProps) (App)

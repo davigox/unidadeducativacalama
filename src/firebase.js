@@ -1,5 +1,6 @@
-import firebase from 'firebase/app';
+import * as firebase from 'firebase/app';
 import 'firebase/firestore';
+import 'firebase/auth';
 var firebaseConfig = {
     apiKey: "AIzaSyBzbrKOFXUai_lrcsLzpZJgYwK5866r60M",
     authDomain: "unidadeducativacalama.firebaseapp.com",
@@ -13,3 +14,4 @@ var firebaseConfig = {
 const fb = firebase.initializeApp(firebaseConfig);
 
 export const db = fb.firestore();
+export const auth = fb.auth();

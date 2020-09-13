@@ -1,18 +1,29 @@
 .navbar{
     width: 100%;
     height: 100px;
-    background: #C41C11;
+    background: #010101;
     display: flex;
     align-items: center;
     position: relative;
     justify-content: space-around;
+    margin-bottom: 1px;
+    z-index: 2;
 }
 .navbar__logo{
+    text-decoration: none;
+    width: 50%;
     display: flex;
     align-items: center;
+
+}
+.navbar__logo:hover{
+    cursor: pointer;
+}
+.navbar__section-info{
+    margin-left: 10px;
 }
 .navbar__titulo{
-    color: white;
+    color: #FFFEFE;
     font-weight: 900;
     font-size: 1.75em;
 }
@@ -22,7 +33,7 @@
 .line{
     width: 50px;
     height: 4px;
-    background: white;
+    background: #FFFEFE;
     margin: auto;
 }
 .hamburger{
@@ -50,7 +61,7 @@
     align-items: center;
     margin-left: auto;
     flex-direction: column;
-    transition: 1s;
+    transition: .4s;
     transform: translate(100%);
 }
 .nav-links--open{
@@ -72,7 +83,7 @@
     align-items: center;
     justify-content: space-around;
 }
-.nav-links__pages li a{
+.nav-links__pages li a, .nav-links__pages li div{
     color: white;
     text-decoration: none;
     font-size: 2em;
@@ -127,4 +138,299 @@
 .arrow.go:after,.arrow.go:before{
     transform:translate(-200%);
     opacity:0
+}
+.navbar__button{
+    background: #cc2030;
+    border: none;
+    border-radius: 3px;
+    color: #fffefe;
+    height: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar__usuario{
+    width: 40%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    color: #fffefe;
+    box-sizing: border-box;
+    padding: 3px;
+    border-radius: 4px;
+    background: #252525;
+}
+.usuario__nombre{
+    width: 40%;
+}
+.usuario__imagen{
+    width: 30%;
+}
+.usuario__flecha{
+    width: 30%;
+}
+.menu-user{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 100;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-200%);
+    transition: .3s;
+    
+}
+.menu-user-open{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #252525;
+    transform: translateY(0%);
+}
+.menu-user__item{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fffefe;
+    margin-top: 1px;
+    margin-bottom: 1px;
+
+}
+.menu-user__opcion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    font-weight: 700;
+    height: 35px;
+}
+.menu-user__opcion:hover{
+    cursor: pointer;
+}
+.opciones{
+    color: #252525;
+
+}
+.cerrar-sesion{
+    color: #cc2030;
+}
+@media screen and (min-width:200px){
+    .navbar{
+        height: 60px;
+    }
+    .logo__img{
+        width: 30px;
+    }
+    .navbar__titulo{
+        font-size: .5em;
+    }
+    .line{
+        width: 30px;
+    }
+    .nav-links__pages li a, .nav-links__admin li a{
+        font-size: 1em;
+    }
+    .usuario__nombre{
+        font-size: .5em;
+        width: 60%;
+    }
+    .usuario__imagen{
+        width: 25%;
+    }
+    .usuario__flecha{
+        width: 15%;
+    }
+}
+@media screen and (min-width:400px){
+    .navbar{
+        height: 70px;
+    }
+    .logo__img{
+        width: 50px;
+    }
+    .navbar__titulo{
+        font-size: 1em;
+    }
+    .line{
+        width: 40px;
+    }
+    .nav-links__pages li a, .nav-links__admin li a{
+        font-size: 1.25em;
+    }
+    .usuario__nombre{
+        font-size: .75em;
+        width: 60%;
+    }
+    .usuario__imagen{
+        width: 25%;
+    }
+    .usuario__flecha{
+        width: 15%;
+    }
+}
+@media screen and (min-width:600px){
+    .navbar{
+        height: 80px;
+    }
+    .logo__img{
+        width: 60px;
+    }
+    .navbar__titulo{
+        font-size: 1.35em;
+    }
+    .line{
+        width: 45px;
+    }
+    .nav-links__pages li a, .nav-links__admin li a{
+        font-size: 1.5em;
+    }
+    .navbar__button{
+        height: 40px;
+        width: 120px;
+        font-size: 1em;
+    }
+    .usuario__nombre{
+        font-size: .85em;
+        width: 60%;
+    }
+    .usuario__imagen{
+        width: 25%;
+    }
+    .usuario__flecha{
+        width: 15%;
+    }
+
+}
+@media screen and (min-width:768px){
+    .navbar{
+        height: 90px;
+    }
+    .logo__img{
+        width: 60px;
+    }
+    .navbar__titulo{
+        font-size: 1.5em;
+    }
+    .line{
+        width: 50px;
+    }
+    .nav-links__pages li a, .nav-links__admin li a{
+        font-size: 1.75em;
+    }
+    .navbar__button{
+        height: 50px;
+        width: 140px;
+        font-size: 1.2em;
+    }
+    .usuario__nombre{
+        font-size: 1em;
+        width: 60%;
+    }
+    .usuario__imagen{
+        width: 25%;
+    }
+    .usuario__flecha{
+        width: 15%;
+    }
+}
+@media screen and (min-width:850px){
+    .navbar{
+        height: 100px;
+    }
+    .logo__img{
+        width: 62px;
+    }
+    .navbar__titulo{
+        font-size: 1.75em;
+    }
+    .line{
+        width: 50px;
+    }
+    .usuario__nombre{
+        font-size: 1.25em;
+        width: 60%;
+    }
+    .usuario__imagen{
+        width: 25%;
+    }
+    .usuario__flecha{
+        width: 15%;
+    }
+}
+@media screen and (min-width:1024px){
+    .navbar__titulo{
+        font-size: 2em;
+    }
+    .nav-links__pages li a, .nav-links__admin li a{
+        font-size: 1.75em;
+    }
+    .navbar__button{
+        height: 50px;
+        width: 180px;
+        font-size: 1.4em;
+    }
+    .usuario__nombre{
+        font-size: 1.5em;
+        width: 60%;
+    }
+    .usuario__imagen{
+        width: 20%;
+    }
+    .usuario__flecha{
+        width: 13%;
+    }
+}
+@media screen and (min-width:1100px){
+    .navbar__button{
+        height: 50px;
+        width: 190px;
+        font-size: 1.4em;
+    }
+    .usuario__nombre{
+        font-size: 1.5em;
+        width: 60%;
+    }
+    .usuario__imagen{
+        width: 20%;
+    }
+    .usuario__flecha{
+        width: 13%;
+    }
+}
+@media screen and (min-width:1240px){
+    .navbar__button{
+        height: 50px;
+        width: 200px;
+        font-size: 1.4em;
+    }
+    .usuario__nombre{
+        font-size: 1.65em;
+        width: 50%;
+    }
+    .usuario__imagen{
+        width: 16%;
+    }
+    .usuario__flecha{
+        width: 10%;
+    }
+}
+@media screen and (min-width:1440px){
+    .usuario__nombre{
+        font-size: 1.65em;
+        width: 50%;
+    }
+    .usuario__imagen{
+        width: 80px;
+    }
+    .usuario__flecha{
+        width: 60px;
+    }
 }

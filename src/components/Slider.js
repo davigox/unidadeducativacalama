@@ -22,22 +22,35 @@ function Slider(){
 
     }
     return(
-        <div className="slider">
-            {
-                sliderArr.map((item,index)=>{
-                    return(
-                        <div key={index} className="slide" style={{transform: `translateX(${x}%)`}}>
-                            {item}
-                        </div>
-                    )
-                })
-            }
-            <button id="goLeft" onClick={goLeft}>
-                <img src={left} alt="Left"/>
-            </button>
-            <button id="goRight" onClick={goRight}>
-                <img src={right} alt="Left"/>
-            </button>
+        <div className="slider__container">
+            <div className="franja1">
+
+            </div>
+            <div className="slider">
+                {
+                    sliderArr.map((item,index)=>{
+                        return(
+                            <div key={index} className="slide" style={{transform: `translateX(${x}%)`}}>
+                                {item}
+                            </div>
+                        )
+                    })
+                }
+                <button id="goLeft" onClick={goLeft}>
+                    <img src={left} alt="Left"/>
+                </button>
+                <button id="goRight" onClick={goRight}>
+                    <img src={right} alt="Left"/>
+                </button>
+            </div>
+            <div className="franja2">
+                <div className="franja2__pensamiento">
+                    LA EDUCACIÓN ES EL ARMA MÁS PODEROSA QUE PUEDES USAR PARA CAMBIAR EL MUNDO.
+                </div>
+                <div className="franja2__autor">
+                    Nelson Mandela
+                </div>
+            </div>
         </div>
     )
 }
