@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <g id="classroom" transform="translate(-36 -439)">
+    <circle id="Elipse_12" data-name="Elipse 12" cx="12.5" cy="12.5" r="12.5" transform="translate(36 439)" fill="#fff"/>
+    <g id="Rectángulo_75" data-name="Rectángulo 75" transform="translate(40 443)" fill="#23a566" stroke="#f5ba14" stroke-width="2">
+      <rect width="18" height="18" rx="3" stroke="none"/>
+      <rect x="1" y="1" width="16" height="16" rx="2" fill="none"/>
+    </g>
+    <circle id="Elipse_13" data-name="Elipse 13" cx="1.5" cy="1.5" r="1.5" transform="translate(47 448)" fill="#fff"/>
+    <path id="Sustracción_2" data-name="Sustracción 2" d="M4,2H0A2,2,0,0,1,3.414.586,1.987,1.987,0,0,1,4,2H4Z" transform="translate(50 453)" fill="#65c194"/>
+    <path id="Sustracción_3" data-name="Sustracción 3" d="M4,2H0A2,2,0,0,1,3.414.586,1.987,1.987,0,0,1,4,2H4Z" transform="translate(43 453)" fill="#65c194"/>
+    <path id="Sustracción_1" data-name="Sustracción 1" d="M5,3H0A3.307,3.307,0,0,1,.732.879,2.3,2.3,0,0,1,2.5,0,2.3,2.3,0,0,1,4.268.879,3.307,3.307,0,0,1,5,3H5Z" transform="translate(46 452)" fill="#fff"/>
+    <circle id="Elipse_17" data-name="Elipse 17" cx="1" cy="1" r="1" transform="translate(44 450)" fill="#65c194"/>
+    <circle id="Elipse_15" data-name="Elipse 15" cx="1" cy="1" r="1" transform="translate(51 450)" fill="#65c194"/>
+    <rect id="Rectángulo_80" data-name="Rectángulo 80" width="4" height="1" transform="translate(50 458)" fill="#fff"/>
+  </g>
+</svg>

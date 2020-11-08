@@ -1,0 +1,42 @@
+.ZoomForm{
+    display: flex;
+    flex-direction: column;
+}
+.ZoomForm__header{
+    display: flex;
+    justify-content: center;
+}
+.ZoomForm__titulo{
+    color: #499FEB;
+    font-weight: 700;
+}
+.ZoomForm__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ZoomForm__label{
+    margin-left: 0;
+    margin-right: auto;
+    font-size: .8em;
+}
+.ZoomForm__input{
+    width: 100%;
+    height: 20px;
+    color: #2C2948;
+    background: #F7F7F7;
+    border: 1px solid #499FEB;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 5px;
+}
+.ZoomForm__button{
+    width: 100%;
+    border: none;
+    margin-top: 5px;
+    border-radius: 10px;
+    background: #499FEB;
+}
+.ZoomForm__error{
+
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30">
+  <g id="cuestionario" transform="translate(2388 -51)">
+    <path id="Sustracción_5" data-name="Sustracción 5" d="M30,30H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0H30a2,2,0,0,1,2,2V28A2,2,0,0,1,30,30ZM4,2A2,2,0,0,0,2,4V26a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V4a2,2,0,0,0-2-2Z" transform="translate(-2388 51)" fill="#fff"/>
+    <path id="Trazado_15" data-name="Trazado 15" d="M-2383.734,58.717l2.486,2.723,5.446-5.919" transform="translate(0 3)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Trazado_16" data-name="Trazado 16" d="M-2383.734,58.717l2.486,2.723,5.446-5.919" transform="translate(0 10)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Trazado_18" data-name="Trazado 18" d="M-2372,58.954h11.941" transform="translate(0 0.546)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+    <path id="Trazado_19" data-name="Trazado 19" d="M-2372,58.954h11.941" transform="translate(0 6.546)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+    <path id="Trazado_20" data-name="Trazado 20" d="M-2372,58.954h11.941" transform="translate(0 12.546)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+  </g>
+</svg>

@@ -1,0 +1,33 @@
+.Institucion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Institucion__centrado{
+    
+    width: 95%;
+}
+.Institucion__titulo{
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #2C2948;
+}
+.Institucion__imagen{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Institucion__imagen img{
+    width: 180px;
+    margin-top: 8px;
+}
+.Institucion__parrafo{
+    font-weight: 300;
+    margin-top: 10px;
+}
+Institucion__mapa{
+    width: 100%;
+}

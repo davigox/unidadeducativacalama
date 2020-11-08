@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54" height="54" viewBox="0 0 54 54">
+  <defs>
+    <filter id="Trazado_107" x="0" y="0" width="54" height="54" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-opacity="0.588"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="mas" transform="translate(798 185)">
+    <g transform="matrix(1, 0, 0, 1, -798, -185)" filter="url(#Trazado_107)">
+      <path id="Trazado_107-2" data-name="Trazado 107" d="M21,0A21,21,0,1,1,0,21,21,21,0,0,1,21,0Z" transform="translate(6 4)" fill="#146bb8"/>
+    </g>
+    <rect id="Rectángulo_306" data-name="Rectángulo 306" width="2" height="18" rx="1" transform="translate(-772 -168)" fill="#fff"/>
+    <rect id="Rectángulo_307" data-name="Rectángulo 307" width="2" height="18" rx="1" transform="translate(-780 -158) rotate(-90)" fill="#fff"/>
+  </g>
+</svg>

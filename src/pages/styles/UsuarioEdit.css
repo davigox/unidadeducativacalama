@@ -1,0 +1,75 @@
+.usuarioEdit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.usuarioEdit__centrado{
+    width: 90%;
+    box-sizing: border-box;
+    background: #fffefe;
+    border-radius: 5px;
+}
+.usuarioEdit__header{
+    height: 50px;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px 5px 0 0;;
+    color: #fffefe;
+    background:  #3d9dea;
+    font-size: 2em;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.usuarioEdit__titulo{
+
+}
+.usuarioEdit__form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.usuarioEdit__label{
+    box-sizing: border-box;
+    padding: 2px;
+    height: 30px;
+    color: #161616;
+    font-weight: 700;
+}
+.usuarioEdit__input{
+    box-sizing: border-box;
+    padding: 2px;
+    color: #252525;
+    outline: none;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.usuarioEdit__button{
+    width: 40%;
+    background: #CC2030;
+    height: 40px;
+    font-size: 20px;
+    color: #fffefe;
+    outline: none;
+    border: 2px solid #CC2030;
+    border-radius: 5px;
+    margin-right: 0px;
+    margin-left: auto;
+}
+.usuarioEdit__button:hover{
+    cursor: pointer;
+    background: #cc182a;
+}
+.usuarioEdit__error{
+    color: #CC2030;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.usuarioEdit__correcto{
+    color: #3d9dea;
+    font-size: 1.5em;
+    font-weight: 700;
+}

@@ -1,0 +1,35 @@
+.EstudianteCursoItem{
+    background: #ffffff;
+    display: flex;
+    margin-bottom: 10px;
+    width: fit-content;
+    border:.5px solid #7165E3;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 5px 8px -5px rgba(113,101,227,1);
+    -moz-box-shadow: 3px 5px 8px -5px rgba(113,101,227,1);
+    box-shadow: 3px 5px 8px -5px rgba(113,101,227,1);
+}
+.EstudianteCursoItemColumn{
+    box-sizing: border-box;
+    padding: 3px;
+    border-right: 1px solid #b6b1e0;
+}
+.EstudianteCursoItemColumn__numero{
+    width: 40px;
+    height: 40px;
+    border-radius: 35%;
+    background: #7165E3;
+    color: #1C1939;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.EstudianteCursoItemColumn__titulo{
+    white-space: nowrap;
+    color: #1C1939;
+}
+.EstudianteCursoItemColumn__subtitulo{
+    white-space: nowrap;
+    color: #1a405f;
+}

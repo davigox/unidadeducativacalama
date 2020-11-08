@@ -1,0 +1,114 @@
+.nuevoYoutube{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.nuevoYoutube__centrado{
+    width: 50%;
+}
+.nuevoYoutube__header{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nuevoYoutube__titulo{
+    color: #1C1939;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.nuevoYoutube__subtitulo{
+    color: #1C1939;
+    font-weight: 400;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.nuevoYoutube__form{
+    background: #F9F9FB;
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.nuevoYoutube__label{
+    box-sizing: border-box;
+    padding: 2px;
+    height: 30px;
+    color: #2C2948;
+    font-weight: 400;
+}
+.nuevoYoutube__input{
+    box-sizing: border-box;
+    padding: 2px;
+    color: #2C2948;
+    background: #F7F7F7;
+    font-weight: 300;
+    outline: none;
+    height: 40px;
+    border: 1px solid #7165E3;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.nuevoYoutube__input:focus{
+    background: #7265e334;
+}
+.nuevoYoutube__button{
+    width: 100%;
+    background: #1C1939;
+    height: 40px;
+    font-size: 20px;
+    color: #fffefe;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+}
+.nuevoYoutube__button:hover{
+    cursor: pointer;
+    background: #2a2744;
+}
+.nuevoYoutube__error{
+    color: #cc2030;
+    font-weight: 500;
+}
+@media screen and (min-width:320px){
+    .nuevoYoutube__centrado{
+        width: 100%;
+    }
+}
+@media screen and (min-width:400px){
+   
+}
+@media screen and (min-width:600px){
+    .nuevoYoutube__centrado{
+        width: 90%;
+    }
+}
+@media screen and (min-width:768px){
+    
+}
+@media screen and (min-width:850px){
+    .nuevoYoutube__centrado{
+        width: 80%;
+    }
+}
+@media screen and (min-width:1024px){
+   
+}
+@media screen and (min-width:1100px){
+    .nuevoYoutube__centrado{
+        width: 70%;
+    }
+}
+@media screen and (min-width:1240px){
+    .nuevoYoutube__centrado{
+        width: 60%;
+    }
+}
+@media screen and (min-width:1440px){
+    .nuevoYoutube__centrado{
+        width: 50%;
+    }
+}

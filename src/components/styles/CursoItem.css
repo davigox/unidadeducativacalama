@@ -1,0 +1,295 @@
+.cursoItem{
+    width: 95%;
+    box-sizing: border-box;
+    border:.5px solid #7165E3;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    /* border: 1px solid #a8a8a8; */
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 5px 8px -5px rgba(113,101,227,1);
+    -moz-box-shadow: 3px 5px 8px -5px rgba(113,101,227,1);
+    box-shadow: 3px 5px 8px -5px rgba(113,101,227,1);
+}
+.cursoItem__body{
+    display: flex;
+    align-items: center;
+}
+.cursoItem__ico{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #cc2030;
+    border-radius: 50%;
+}
+.cursoItem__ico img{
+    width: 70%;
+    height: 70%;
+}
+.color{
+    border: 1px solid #7165E3;
+}
+.Primero{
+    background: #306BF3;
+    color: #306BF3;
+}
+.Segundo{
+    background: #10182F;
+    color: #10182F;
+}
+.Tercero{
+    background: #1CB6EA;
+    color: #1CB6EA;
+}
+.Cuarto{
+    background: #ED204D;
+    color: #ED204D;
+}
+.Quinto{
+    background: #8D30F3;
+    color: #8D30F3;
+}
+.Sexto{
+    background: #FBD133;
+    color: #FBD133;
+}
+
+.cursoItem__datos{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.cursoItem__text{
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+    margin: 3px;
+}
+.cursoItem__text1{
+    font-weight: 600;
+    color: #9EA6BE;
+}
+.cursoItem__text2{
+    font-weight: 400;
+    color: #1C1939;
+    margin-left: 5px;
+}
+.cursoItem__opciones{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 0;
+}
+.cursoItem__img{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px;
+    background: #7165E3;
+    margin-left: 10px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px #c0c0c0,
+    -5px -5px 10px #ffffff;
+}
+.cursoItem__img img{
+    width: 20px;
+    height: 20px;
+}
+.cursoItem__img:hover{
+    background: #cc2030;
+    box-sizing: border-box;
+}
+@media screen and (min-width:320px){
+    .cursoItem{
+        width: 95%;
+    }
+    .cursoItem__ico{
+        width: 30px;
+        height: 30px;
+        margin-right: 4px;
+    }
+    .cursoItem__text{
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+    }
+    .cursoItem__text1{
+        font-weight: 700;
+        font-size: .8em;
+    }
+    .cursoItem__text2{
+        font-weight: 400;
+        font-size: .8em;
+    }
+}
+@media screen and (min-width:400px){
+   
+}
+@media screen and (min-width:600px){
+    .cursoItem{
+        width: 100%;
+    }
+    .cursoItem__ico{
+        width: 35px;
+        height: 35px;
+        margin-right: 4px;
+    }
+    .cursoItem__text{
+        display: flex;
+        flex-direction: row;
+        margin: 2px;
+    }
+    .cursoItem__text1{
+        font-weight: 700;
+        font-size: .9em;
+    }
+    .cursoItem__text2{
+        font-weight: 400;
+        font-size: .9em;
+    }
+}
+@media screen and (min-width:768px){
+    .cursoItem{
+        width: 90%;
+    }
+    .cursoItem__ico{
+        width: 40px;
+        height: 40px;
+        margin-right: 6px;
+    }
+    .cursoItem__text{
+        display: flex;
+        flex-direction: row;
+        margin: 4px;
+    }
+    .cursoItem__text1{
+        font-weight: 700;
+        font-size: 1em;
+    }
+    .cursoItem__text2{
+        font-weight: 400;
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:850px){
+    .cursoItem{
+        width: 80%;
+    }
+    .cursoItem__ico{
+        width: 40px;
+        height: 40px;
+        margin-right: 6px;
+    }
+    .cursoItem__text{
+        display: flex;
+        flex-direction: row;
+        margin: 4px;
+    }
+    .cursoItem__text1{
+        font-weight: 700;
+        font-size: 1em;
+    }
+    .cursoItem__text2{
+        font-weight: 400;
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:1024px){
+    .cursoItem{
+        width: 70%;
+    }
+    .cursoItem__ico{
+        width: 45px;
+        height: 45px;
+        margin-right: 6px;
+    }
+    .cursoItem__text{
+        display: flex;
+        flex-direction: row;
+        margin: 4px;
+    }
+    .cursoItem__text1{
+        font-weight: 700;
+        font-size: 1em;
+    }
+    .cursoItem__text2{
+        font-weight: 400;
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:1100px){
+    .cursoItem{
+        width: 70%;
+    }
+    .cursoItem__ico{
+        width: 45px;
+        height: 45px;
+        margin-right: 6px;
+    }
+    .cursoItem__text{
+        display: flex;
+        flex-direction: row;
+        margin: 4px;
+    }
+    .cursoItem__text1{
+        font-weight: 700;
+        font-size: 1em;
+    }
+    .cursoItem__text2{
+        font-weight: 400;
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:1240px){
+    .cursoItem{
+        width: 60%;
+    }
+    .cursoItem__ico{
+        width: 45px;
+        height: 45px;
+        margin-right: 6px;
+    }
+    .cursoItem__text{
+        display: flex;
+        flex-direction: row;
+        margin: 4px;
+    }
+    .cursoItem__text1{
+        font-weight: 700;
+        font-size: 1em;
+    }
+    .cursoItem__text2{
+        font-weight: 400;
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:1440px){
+    .cursoItem{
+        width: 60%;
+    }
+    .cursoItem__ico{
+        width: 45px;
+        height: 45px;
+        margin-right: 6px;
+    }
+    .cursoItem__text{
+        display: flex;
+        flex-direction: row;
+        margin: 4px;
+    }
+    .cursoItem__text1{
+        font-weight: 700;
+        font-size: 1em;
+    }
+    .cursoItem__text2{
+        font-weight: 400;
+        font-size: 1em;
+    }
+}

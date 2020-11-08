@@ -1,0 +1,59 @@
+.PreguntaForm{
+    width: 100%;
+}
+.PreguntaForm__centrado{
+    width: 100%;
+}
+.PreguntaForm__header{
+    width: 100%;
+    display: flex;
+}
+.PreguntaForm__titulo{
+    font-weight: 400;
+}
+.PreguntaForm__form{
+    width: 100%;
+    display: flex;
+}
+.PreguntaForm__input{
+    width: 95%;
+    height: 35px;
+    color: #2C2948;
+    background: #F7F7F7;
+    border: 1px solid #7165E3;
+    border-radius: 10px;
+    outline: none;
+}
+.PreguntaForm__input:focus{
+    background: #7265e334;
+}
+.PreguntaForm__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #7165E3;
+    border: none;
+    margin-left: 5px;
+    border-radius: 50%;
+    outline: none;
+}
+.PreguntaForm__button img{
+    width: 15px;
+    height: 15px;
+}
+.spinner{
+    width: 20px;
+    height: 20px;
+    /* display: inline-block; */
+    border: 3px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    border-top-color: #ffffff;
+    animation: 1s spin infinite ease-in-out;
+}
+@keyframes spin {
+    to{
+        transform: rotate(360deg);
+    }
+}

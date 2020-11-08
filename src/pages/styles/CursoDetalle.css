@@ -1,0 +1,197 @@
+.cursoDetalle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #7f74e0;
+}
+.cursoDetalle__centrado{
+    box-sizing: border-box;
+    /* padding: 5px; */
+    width: 100%;
+    /* background: #ededed; */
+}
+.cursoDetalle__header{
+    box-sizing: border-box;
+    background: #7f74e0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cursoDetalle__titulo{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2em;
+}
+.cursoDetalle__head{
+    width: 50%;
+    border-radius: 20px 20px 0 0;
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cursoDetalle__datos{
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.cursoDetalle__row{
+    display: flex;
+}
+.cursoDetalle__label{
+    box-sizing: border-box;
+    padding: 2px;
+    height: 30px;
+    color: #ffffff;
+    font-weight: 400;
+}
+.cursoDetalle__text{
+    box-sizing: border-box;
+    padding: 2px;
+    height: 30px;
+    color: #ffffff;
+    opacity: .8;
+    font-weight: 400;
+}
+.cursoDetalle__input:focus{
+    background: #e2e1f0f0;
+}
+.cursoDetalle__button{
+    width: 100%;
+    background: #1C1939;
+    height: 40px;
+    font-size: 20px;
+    color: #fffefe;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+}
+.cursoDetalle__button:hover{
+    cursor: pointer;
+    background: #27243f;
+}
+.cursoDetalle__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.cursoDetalle__head{
+    display: flex;
+    justify-content: space-between;
+}
+.cursoDetalle__body--text1{
+    width: 60%;
+    color: #1C1939;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.cursoDetalle__text1{
+    width: 30%;
+    color: #3d9dea;
+    font-weight: 500;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.cursoDetalle__text2{
+    width: 70%;
+    height: 20px;
+    margin-bottom: 10px;
+    color: #505050;
+    font-weight: 300;
+}
+.cursoDetalle__opciones{
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    width: 80px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+}
+.cursoDetalle__pdf img{
+    width: 50px;
+    height: 50px;
+}
+.cursoDetalle__youtube img{
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (min-width:320px){
+    .cursoDetalle__head{
+        width: 100%;
+    }
+    .cursoDetalle__body--text1{
+        width: 100%;
+    }
+}
+@media screen and (min-width:400px){
+   
+}
+@media screen and (min-width:600px){
+    .cursoDetalle__head{
+        width: 100%;
+    }
+    .cursoDetalle__body--text1{
+        width: 100%;
+    }
+}
+@media screen and (min-width:768px){
+    .cursoDetalle__head{
+        width: 100%;
+    }
+    .cursoDetalle__body--text1{
+        width: 90%;
+    }
+}
+@media screen and (min-width:850px){
+    .cursoDetalle__head{
+        width: 100%;
+    }
+    .cursoDetalle__body--text1{
+        width: 80%;
+    }
+}
+@media screen and (min-width:1024px){
+    .cursoDetalle__head{
+        width: 100%;
+    }
+    .cursoDetalle__body--text1{
+        width: 70%;
+    }
+}
+@media screen and (min-width:1100px){
+    .cursoDetalle__head{
+        width: 100%;
+    }
+    .cursoDetalle__body--text1{
+        width: 70%;
+    }
+}
+@media screen and (min-width:1240px){
+    .cursoDetalle__head{
+        width: 100%;
+    }
+    .cursoDetalle__body--text1{
+        width: 60%;
+    }
+}
+@media screen and (min-width:1440px){
+    .cursoDetalle__head{
+        width: 100%;
+    }
+    .cursoDetalle__body--text1{
+        width: 60%;
+    }
+}

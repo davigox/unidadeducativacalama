@@ -1,0 +1,51 @@
+.RespuestaForm{
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.RespuestaForm__centrado{
+    width: 100%;
+}
+.RespuestaForm__header{
+    width: 100%;
+    display: flex;
+}
+.RespuestaForm__titulo{
+    font-weight: 300;
+    font-size: .7em;
+    color: #6f6f6f;
+}
+.RespuestaForm__form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.RespuestaForm__input{
+    width: 95%;
+    height: 25px;
+    color: #2C2948;
+    background: #F7F7F7;
+    border: 1px solid #6f6f6f;
+    border-radius: 10px;
+    outline: none;
+}
+.RespuestaForm__input:focus{
+    background: #7265e334;
+}
+.RespuestaForm__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background: #6f6f6f;
+    border: none;
+    margin-left: 5px;
+    border-radius: 50%;
+    outline: none;
+}
+.RespuestaForm__button img{
+    width: 10px;
+    height: 10px;
+}

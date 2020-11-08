@@ -1,0 +1,7 @@
+.ContenidosList input[type="radio"]:checked + label{
+    color: #ffffff;
+    background: #1C1939;
+}
+.ContenidosList input[type="checkbox"]{
+    display: none;
+}

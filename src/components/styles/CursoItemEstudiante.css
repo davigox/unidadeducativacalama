@@ -1,0 +1,261 @@
+.cursoItemEstudiante{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    -webkit-box-shadow: 3px 5px 8px -5px rgba(22,22,22,1);
+    -moz-box-shadow: 3px 5px 8px -5px rgba(22,22,22,1);
+    box-shadow: 3px 5px 8px -5px rgba(22,22,22,1);
+}
+.cursoItemEstudiante__body{
+    display: flex;
+    align-items: center;
+}
+.cursoItemEstudiante__ico{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background: #cc2030;
+    border-radius: 50%;
+}
+.Primero{
+    background: #306BF3;
+}
+.Segundo{
+    background: #10182F;
+}
+.Tercero{
+    background: #1CB6EA;
+}
+.Cuarto{
+    background: #ED204D;
+}
+.Quinto{
+    background: #8D30F3;
+}
+.Sexto{
+    background: #FBD133;
+}
+
+.cursoItemEstudiante__datos{
+    display: flex;
+    flex-direction: column;
+}
+.cursoItemEstudiante__text{
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+    margin: 3px;
+}
+.cursoItemEstudiante__text1{
+    font-weight: 600;
+    color: #9EA6BE;
+}
+.cursoItemEstudiante__text2{
+    font-weight: 400;
+    color: #1C1939;
+    margin-left: 5px;
+}
+.cursoItemEstudiante__opciones{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 0;
+}
+.cursoItemEstudiante__button{
+    background: #7C6EFF;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+}
+@media screen and (min-width:320px){
+    .cursoItemEstudiante{
+        width: 100%;
+    }
+    .cursoItemEstudiante__ico{
+        width: 30px;
+        height: 30px;
+        margin-right: 4px;
+    }
+    .cursoItemEstudiante__text{
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+    }
+    .cursoItemEstudiante__text1{
+        font-weight: 700;
+        font-size: .8em;
+    }
+    .cursoItemEstudiante__text2{
+        font-weight: 400;
+        font-size: .8em;
+    }
+}
+@media screen and (min-width:400px){
+   
+}
+@media screen and (min-width:600px){
+    .cursoItemEstudiante{
+        width: 100%;
+    }
+    .cursoItemEstudiante__ico{
+        width: 35px;
+        height: 35px;
+        margin-right: 4px;
+    }
+    .cursoItemEstudiante__text{
+        display: flex;
+        flex-direction: row;
+        margin: 2px;
+    }
+    .cursoItemEstudiante__text1{
+        font-weight: 700;
+        font-size: .9em;
+    }
+    .cursoItemEstudiante__text2{
+        font-weight: 400;
+        font-size: .9em;
+    }
+}
+@media screen and (min-width:768px){
+    .cursoItemEstudiante{
+        width: 90%;
+    }
+    .cursoItemEstudiante__ico{
+        width: 40px;
+        height: 40px;
+        margin-right: 6px;
+    }
+    .cursoItemEstudiante__text{
+        display: flex;
+        flex-direction: row;
+        margin: 4px;
+    }
+    .cursoItemEstudiante__text1{
+        font-weight: 700;
+        font-size: 1em;
+    }
+    .cursoItemEstudiante__text2{
+        font-weight: 400;
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:850px){
+    .cursoItemEstudiante{
+        width: 80%;
+    }
+    .cursoItemEstudiante__ico{
+        width: 40px;
+        height: 40px;
+        margin-right: 6px;
+    }
+    .cursoItemEstudiante__text{
+        display: flex;
+        flex-direction: row;
+        margin: 4px;
+    }
+    .cursoItemEstudiante__text1{
+        font-weight: 700;
+        font-size: 1em;
+    }
+    .cursoItemEstudiante__text2{
+        font-weight: 400;
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:1024px){
+    .cursoItemEstudiante{
+        width: 70%;
+    }
+    .cursoItemEstudiante__ico{
+        width: 45px;
+        height: 45px;
+        margin-right: 6px;
+    }
+    .cursoItemEstudiante__text{
+        display: flex;
+        flex-direction: row;
+        margin: 4px;
+    }
+    .cursoItemEstudiante__text1{
+        font-weight: 700;
+        font-size: 1em;
+    }
+    .cursoItemEstudiante__text2{
+        font-weight: 400;
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:1100px){
+    .cursoItemEstudiante{
+        width: 70%;
+    }
+    .cursoItemEstudiante__ico{
+        width: 45px;
+        height: 45px;
+        margin-right: 6px;
+    }
+    .cursoItemEstudiante__text{
+        display: flex;
+        flex-direction: row;
+        margin: 4px;
+    }
+    .cursoItemEstudiante__text1{
+        font-weight: 700;
+        font-size: 1em;
+    }
+    .cursoItemEstudiante__text2{
+        font-weight: 400;
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:1240px){
+    .cursoItemEstudiante{
+        width: 60%;
+    }
+    .cursoItemEstudiante__ico{
+        width: 45px;
+        height: 45px;
+        margin-right: 6px;
+    }
+    .cursoItemEstudiante__text{
+        display: flex;
+        flex-direction: row;
+        margin: 4px;
+    }
+    .cursoItemEstudiante__text1{
+        font-weight: 700;
+        font-size: 1em;
+    }
+    .cursoItemEstudiante__text2{
+        font-weight: 400;
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:1440px){
+    .cursoItemEstudiante{
+        width: 60%;
+    }
+    .cursoItemEstudiante__ico{
+        width: 45px;
+        height: 45px;
+        margin-right: 6px;
+    }
+    .cursoItemEstudiante__text{
+        display: flex;
+        flex-direction: row;
+        margin: 4px;
+    }
+    .cursoItemEstudiante__text1{
+        font-weight: 700;
+        font-size: 1em;
+    }
+    .cursoItemEstudiante__text2{
+        font-weight: 400;
+        font-size: 1em;
+    }
+}

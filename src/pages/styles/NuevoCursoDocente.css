@@ -1,0 +1,113 @@
+.nuevoCursoDocente{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.nuevoCursoDocente__centrado{
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+}
+.nuevoCursoDocente__header{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+}
+.nuevoCursoDocente__titulo{
+    color: #1C1939;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.nuevoCursoDocente__img{
+
+}
+.nuevoCursoDocente__form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.nuevoCursoDocente__label{
+    box-sizing: border-box;
+    padding: 2px;
+    height: 30px;
+    color: #2C2948;
+    font-weight: 400;
+}
+.nuevoCursoDocente__input{
+    box-sizing: border-box;
+    padding: 2px;
+    color: #2C2948;
+    background: #F7F7F7;
+    font-weight: 300;
+    outline: none;
+    height: 40px;
+    border: 1px solid #7165E3;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.nuevoCursoDocente__input:focus{
+    background: #7265e334;
+}
+.nuevoCursoDocente__button{
+    width: 100%;
+    background: #7165E3;
+    height: 40px;
+    font-size: 20px;
+    color: #fffefe;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+}
+.nuevoCursoDocente__button:hover{
+    cursor: pointer;
+    background: #8279d5;
+}
+.nuevoCursoDocente__error{
+    color: #CC2030;
+    font-weight: 500;
+}
+@media screen and (min-width:320px){
+    .nuevoCursoDocente__centrado{
+        width: 100%;
+    }
+}
+@media screen and (min-width:400px){
+   
+}
+@media screen and (min-width:600px){
+    .nuevoCursoDocente__centrado{
+        width: 90%;
+    }
+}
+@media screen and (min-width:768px){
+    
+}
+@media screen and (min-width:850px){
+    .nuevoCursoDocente__centrado{
+        width: 80%;
+    }
+}
+@media screen and (min-width:1024px){
+   
+}
+@media screen and (min-width:1100px){
+    .nuevoCursoDocente__centrado{
+        width: 70%;
+    }
+}
+@media screen and (min-width:1240px){
+    .nuevoCursoDocente__centrado{
+        width: 60%;
+    }
+}
+@media screen and (min-width:1440px){
+    .nuevoCursoDocente__centrado{
+        width: 50%;
+    }
+}

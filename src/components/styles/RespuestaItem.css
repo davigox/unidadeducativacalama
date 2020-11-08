@@ -1,0 +1,99 @@
+.RespuestaItem{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom:1px solid #CDD0D4 ;
+}
+.RespuestaItem__header{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.RespuestaItem__ico{
+    box-sizing: border-box;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e6aa07;
+    color: #1C1939;
+    font-weight: 700;
+}
+.RespuestaItem__ico img{
+    width: 20px;
+    height: 20px;
+}
+.RespuestaItem__usuario{
+    display: flex;
+    flex-direction: column;
+}
+.RespuestaItem__nombre{
+    font-size: .8em;
+    font-weight: 700;
+    color: #1C1939;
+}
+.RespuestaItem__fecha{
+    font-size: .6em;
+    color: #9EA6BE;
+}
+.RespuestaItem__body{
+    box-sizing: border-box;
+    margin-top: 5px;
+    width: 100%;
+    font-weight: 400;
+    color: #1C1939;
+}
+.RespuestaItem__footer{
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.RespuestaItem__respuestas{
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    color: #9EA6BE;
+    font-size: .7em;
+}
+.RespuestaItem__respuestas img{
+    margin-left: 5px;
+    width: 15px;
+    height: 15px;
+}
+.RespuestaItem__borrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    background: #7165E3;
+    margin-right: 5px;
+}
+.RespuestaItem__borrar img{
+    width: 10px;
+    height: 10px;
+}
+.RespuestaItem__footer__calificacion{
+    box-sizing: border-box;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: #306BF3;
+    background: #b4c9f8;
+    border-radius: 10px;
+    font-weight: 300;
+    margin-right: 5px;
+}

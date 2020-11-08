@@ -1,7 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
-  <g id="user" transform="translate(804 314)">
-    <circle id="Elipse_20" data-name="Elipse 20" cx="31" cy="31" r="31" transform="translate(-804 -314)" fill="#cc2030"/>
-    <path id="Sustracción_17" data-name="Sustracción 17" d="M41.088,19.337H0A20.564,20.564,0,0,1,12.547.408C12.889.263,13.24.126,13.588,0a7.963,7.963,0,0,0,6.956,4.095A7.963,7.963,0,0,0,27.5,0c.352.127.7.264,1.041.408A20.527,20.527,0,0,1,41.088,19.336Z" transform="translate(-793.544 -287.275)" fill="#fffefe"/>
-    <circle id="Elipse_26" data-name="Elipse 26" cx="8" cy="8" r="8" transform="translate(-781 -303)" fill="#fffefe"/>
+  <g id="user" transform="translate(2505 233.5)">
+    <rect id="Rectangle_Copy_9" data-name="Rectangle Copy 9" width="62" height="62" rx="30" transform="translate(-2505 -233.5)" fill="#7c6eff"/>
+    <g id="user_1_" data-name="user (1)" transform="translate(-2483.781 -212.519)">
+      <path id="Path" d="M9.281,0A9.4,9.4,0,0,0,0,9.488.408.408,0,0,0,.4,9.9H18.159a.408.408,0,0,0,.4-.413A9.4,9.4,0,0,0,9.281,0Z" transform="translate(0.105 11.138)" fill="#fff"/>
+      <circle id="Oval" cx="4.95" cy="4.95" r="4.95" transform="translate(5.055)" fill="#fff"/>
+    </g>
   </g>
 </svg>

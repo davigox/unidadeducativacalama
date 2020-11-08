@@ -1,0 +1,87 @@
+.TrimestreItem{
+    width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+.TrimestreItem__head{
+    width: 100%;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 5px;
+    width: 100%;
+    background: #ead6ff;
+    /* background: yellow; */
+    display: flex;
+}
+.TrimestreItem__titulo{
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #57508f;
+}
+.TrimestreItem__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1C1939;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.TrimestreItem__img img{
+    width: 15px;
+    height: 15px;
+}
+.TrimestreItem__opciones{
+    display: flex;
+}
+.TrimestreItem__opciones div{
+    margin-left: 10px;
+}
+.TrimestreItem__expandir{
+    width: 25px;
+    cursor: pointer;
+}
+.TrimestreItem__contenido{
+    box-sizing: border-box;
+}
+@media screen and (min-width:320px){
+    .TrimestreItem__titulo{
+        font-size: .7em;
+    }
+}
+@media screen and (min-width:400px){
+    .TrimestreItem__titulo{
+        font-size: .7em;
+    }
+}
+@media screen and (min-width:600px){
+    .TrimestreItem__titulo{
+        font-size: .8em;
+    }
+}
+@media screen and (min-width:768px){
+    .TrimestreItem__titulo{
+        font-size: .8em;
+    }
+}
+@media screen and (min-width:850px){
+    .TrimestreItem__titulo{
+        font-size: 1.5em;
+    }
+}
+@media screen and (min-width:1024px){
+   
+}
+@media screen and (min-width:1100px){
+    
+}
+@media screen and (min-width:1240px){
+   
+}
+@media screen and (min-width:1440px){
+   
+}

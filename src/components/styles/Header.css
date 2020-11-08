@@ -1,14 +1,23 @@
+.header__container{
+    display: flex;
+    justify-content: center;
+}
 .header{
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 90%;
     height: 50px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .header__text{
     color: white;
     font-size: 1.5em;
+}
+.header__img{
+
 }
 @media screen and (min-width:200px){
     .header__text{

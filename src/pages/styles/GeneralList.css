@@ -1,0 +1,40 @@
+.ListaForm{
+    display: flex;
+}
+.ListaForm__centrado{
+    width: 90%;
+}
+.ListaForm__header{
+    margin-bottom: 10px;
+}
+.ListaForm__titulo{
+    color: #ffffff;
+}
+.ListaForm__form{
+    display: flex;
+    margin-bottom: 10px;
+}
+.ListaForm__input{
+    width: 95%;
+    height: 35px;
+    color: #2C2948;
+    background: #F7F7F7;
+    border: 1px solid #2C2948;
+    border-radius: 10px;
+    outline: none;
+}
+.ListaForm__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: #7165e3;
+    border: none;
+    margin-left: 5px;
+    border-radius: 50%;
+    outline: none;
+}
+.ListaForm__error{
+
+}

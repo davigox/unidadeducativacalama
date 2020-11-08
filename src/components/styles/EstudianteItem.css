@@ -1,0 +1,50 @@
+.EstudianteItem{
+    margin-bottom: 10px;
+    width: fit-content;
+    border:.5px solid #d3d1e2;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow:  0px 1px 5px #ffffff;
+}
+.EstudianteItem__header{
+    display: flex;
+    align-items: center;
+}
+.EstudianteItem__ico{
+    height: auto;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+.EstudianteItem__ico img{
+    width: 30px;
+    height: 30px;
+}
+.EstudianteItem__column{
+    box-sizing: border-box;
+    padding: 3px;
+    border-right: 1px solid #b6b1e0;
+   
+}
+.EstudianteItem__nombre{
+    color: #1C1939;
+}
+.EstudianteItem__apellido{
+    color: #1C1939;
+}
+.EstudianteItem__titulo{
+    color: #1C1939;
+
+}
+.EstudianteItem__numero{
+    white-space: nowrap;
+    color: #1a405f;
+}
+.amarillo{
+    background: #8bcbc8;
+}
+.rojo{
+    background: #ecc7c0;
+}
+.celeste{
+    background: #fdae84;
+}                        

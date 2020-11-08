@@ -1,0 +1,102 @@
+.crearCurso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.crearCurso__header{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 90%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    background: #3d9dea;
+}
+.crearCurso__text{
+    color: white;
+    font-size: 1.5em;
+}
+.crearCurso__img{
+
+}
+.crearCurso__centrado{
+    width: 90%;
+    background: #fffefe;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.crearCurso__form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.crearCurso__form--label{
+    box-sizing: border-box;
+    color: #252525;
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-weight: 700;
+}
+.crearCurso__form--input{
+    background: rgba(255, 255, 255, 1);
+    height: 40px;
+    font-size: 20px;
+    color: #161616;
+    margin-bottom: 10px;
+    outline: none;
+    border: 2px solid rgba(53, 53, 53, 0.6);
+    border-radius: 5px;
+}
+.crearCurso__form--button{
+    width: 30%;
+    background: #CC2030;
+    height: 40px;
+    font-size: 20px;
+    color: #fffefe;
+    outline: none;
+    border: 2px solid #CC2030;
+    border-radius: 5px;
+    margin-right: 0px;
+    margin-left: auto;
+}
+.crearCurso__form--button:hover{
+    cursor: pointer;
+    background: #cc182a;
+}
+.error{
+    color: #cc182a;
+    font-weight: 700;
+    font-size: 1.5em;
+} 
+.hide{
+    display: none;
+}
+@media screen and (min-width:200px){
+    
+}
+@media screen and (min-width:400px){
+    
+}
+@media screen and (min-width:600px){
+    
+}
+@media screen and (min-width:768px){
+    
+}
+@media screen and (min-width:850px){
+    
+}
+@media screen and (min-width:1024px){
+
+}
+@media screen and (min-width:1100px){
+    
+}
+@media screen and (min-width:1240px){
+    
+}
+@media screen and (min-width:1440px){
+}

@@ -1,0 +1,310 @@
+.cursoEdit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #7f74e0;
+}
+.cursoEdit__centrado{
+    box-sizing: border-box;
+    /* padding: 5px; */
+    width: 100%;
+    /* background: #ededed; */
+}
+.cursoEdit__header{
+    box-sizing: border-box;
+    background: #7f74e0;
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cursoEdit__header__video{
+    width: 95%;
+    color: #fffefe;
+}
+.cursoEdit__header__video iframe{
+    width: 100%;
+    height: 300px;
+}
+.cursoEdit__header__curso{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 95%;
+}
+.cursoEdit__ico{
+    margin-right: 10px;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+}
+.color1{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.color2{
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    background: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #fffefe;
+}
+.cursoEdit__header__datos{
+    display: flex;
+    flex-direction: column;
+
+}
+.cursoEdit__header__dato{
+    color: #e4e4e4;
+}
+
+.cursoEdit__header__opciones{
+    display: flex;   
+}
+.cursoEdit__header__opciones input[type="checkbox"]{
+    display: none;
+}
+.cursoEdit__header__opciones label{
+    font-size: .8em;
+    margin: 4px;
+    color: #cecece;
+    padding: 5px;
+}
+.cursoEdit__header__opciones label:hover{
+    border-bottom: 3px solid #ffffff;
+    background: #4b4a5e;
+}
+.cursoEdit__header__opciones input[type="checkbox"]:checked + label{
+    border-bottom: 3px solid #ffffff;
+    color: #ffffff;
+}
+
+.cursoEdit__titulo{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2em;
+}
+.cursoEdit__head{
+    width: 50%;
+    border-radius: 20px 20px 0 0;
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cursoEdit__form{
+    width: 90%;
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.cursoEdit__label{
+    box-sizing: border-box;
+    padding: 2px;
+    height: 30px;
+    color: #ffffff;
+    font-weight: 400;
+}
+.cursoEdit__input{
+    box-sizing: border-box;
+    padding: 2px;
+    color: #2C2948;
+    background: #F7F7F7;
+    font-weight: 300;
+    outline: none;
+    height: 40px;
+    border: 1px solid #7165E3;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.cursoEdit__input:focus{
+    background: #e2e1f0f0;
+}
+.cursoEdit__button{
+    width: 100%;
+    background: #1C1939;
+    height: 40px;
+    font-size: 20px;
+    color: #fffefe;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+}
+.cursoEdit__button:hover{
+    cursor: pointer;
+    background: #27243f;
+}
+.cursoEdit__body{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: auto;
+    height: auto;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.cursoEdit__body__contenidos{
+    width: 100%;
+}
+.contenidos__head{
+    display: flex;
+}
+.contenidos__titulo{
+    margin-right: 5px;
+    color: #252525
+}
+.contenidos__img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #7165E3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenidos__img img{
+    width: 10px;
+}
+.cursoEdit__head{
+    display: flex;
+    justify-content: space-between;
+}
+.cursoEdit__body--text1{
+    width: 60%;
+    color: #1C1939;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+.cursoEdit__body--img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background:#7165E3;
+}
+.cursoEdit__body--img img{
+    width: 10px;
+    height: 10px;
+}
+.cursoEdit__text1{
+    width: 30%;
+    color: #3d9dea;
+    font-weight: 500;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.cursoEdit__text2{
+    width: 70%;
+    height: 20px;
+    margin-bottom: 10px;
+    color: #505050;
+    font-weight: 300;
+}
+.cursoEdit__opciones{
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    width: 80px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+}
+.cursoEdit__pdf img{
+    width: 50px;
+    height: 50px;
+}
+.cursoEdit__youtube img{
+    width: 50px;
+    height: 50px;
+}
+/* @media screen and (min-width:320px){
+    .cursoEdit__head{
+        width: 100%;
+    }
+    .cursoEdit__body--text1{
+        width: 100%;
+    }
+}
+@media screen and (min-width:400px){
+   
+}
+@media screen and (min-width:600px){
+    .cursoEdit__head{
+        width: 100%;
+    }
+    .cursoEdit__body--text1{
+        width: 100%;
+    }
+}
+@media screen and (min-width:768px){
+    .cursoEdit__head{
+        width: 100%;
+    }
+    .cursoEdit__body--text1{
+        width: 90%;
+    }
+}
+@media screen and (min-width:850px){
+    .cursoEdit__head{
+        width: 100%;
+    }
+    .cursoEdit__body--text1{
+        width: 80%;
+    }
+}
+@media screen and (min-width:1024px){
+    .cursoEdit__head{
+        width: 100%;
+    }
+    .cursoEdit__body--text1{
+        width: 70%;
+    }
+}
+@media screen and (min-width:1100px){
+    .cursoEdit__head{
+        width: 100%;
+    }
+    .cursoEdit__body--text1{
+        width: 70%;
+    }
+}
+@media screen and (min-width:1240px){
+    .cursoEdit__head{
+        width: 100%;
+    }
+    .cursoEdit__body--text1{
+        width: 60%;
+    }
+}
+@media screen and (min-width:1440px){
+    .cursoEdit__head{
+        width: 100%;
+    }
+    .cursoEdit__body--text1{
+        width: 60%;
+    }
+} */

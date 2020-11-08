@@ -1,0 +1,32 @@
+.TrimestreForm{
+    margin-top: 5px;
+    width: 100%;
+}
+.TrimestreForm__form{
+    display: flex;
+}
+.TrimestreForm__input{
+    width: 95%;
+    height: 35px;
+    color: #2C2948;
+    background: #F7F7F7;
+    border: 1px solid #2C2948;
+    border-radius: 10px;
+    outline: none;
+}
+.TrimestreForm__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: #2C2948;
+    border: none;
+    margin-left: 5px;
+    border-radius: 50%;
+    outline: none;
+}
+.TrimestreForm__button img{
+    width: 20px;
+    height: 20px;
+}

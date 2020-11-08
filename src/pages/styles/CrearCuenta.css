@@ -1,0 +1,129 @@
+.crearCuenta__container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.crearCuenta--centrado{
+    width: 50%;
+    box-sizing: border-box;
+    background-color: #F9F9FB;
+}
+.crearCuenta__header{
+    box-sizing: border-box;
+    color: #1C1939;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.crearCuenta__titulo{
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.crearCuenta__subtitulo{
+    text-align: center;
+    font-size: 1em;
+    font-weight: 400;
+}
+.crearCuenta__form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.crearCuenta__form--label{
+    box-sizing: border-box;
+    padding: 2px;
+    height: 30px;
+    color: #2C2948;
+    font-weight: 400;
+}
+.crearCuenta__form--input{
+    box-sizing: border-box;
+    padding: 2px;
+    color: #2C2948;
+    background: #F7F7F7;
+    font-weight: 300;
+    outline: none;
+    height: 40px;
+    border: 1px solid #7165E3;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.crearCuenta__form--input:focus{
+    background: #7265e334;
+}
+.crearCuenta__form--button{
+    width: 100%;
+    background: #7165E3;
+    height: 40px;
+    font-size: 20px;
+    color: #fffefe;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+}
+.crearCuenta__form--button:hover{
+    cursor: pointer;
+    background: #8279d5;
+}
+.crearCuenta__footer{
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+.crearCuenta__footer--text{
+    margin-bottom: 10px;
+}
+.crearCuenta__footer--link{
+    color: #9990e6;
+}
+.crearCuenta__footer--link:hover{
+    color: #7165E3;
+}
+.crearCuenta__error{
+    color: #CC2030;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+@media screen and (min-width:320px){
+    .crearCuenta--centrado{
+        width: 100%;
+    }
+}
+@media screen and (min-width:400px){
+   
+}
+@media screen and (min-width:600px){
+    .crearCuenta--centrado{
+        width: 90%;
+    }
+}
+@media screen and (min-width:768px){
+    .crearCuenta--centrado{
+        width: 80%;
+    }
+}
+@media screen and (min-width:850px){
+    .crearCuenta--centrado{
+        width: 60%;
+    }
+}
+@media screen and (min-width:1024px){
+    .crearCuenta--centrado{
+        width: 50%;
+    }
+}
+@media screen and (min-width:1100px){
+    
+}
+@media screen and (min-width:1240px){
+    
+}
+@media screen and (min-width:1440px){
+   
+}

@@ -1,27 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import reducer from './reducers'
 import './index.css';
 
 import App from './App';
 
+
+
+import MyProvider from './MyProvider';
 import './firebase';
 
-const initialState = {
-  url: "url",
-  user: false,
-}
 
-const store = createStore(reducer, initialState)
+
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
+  <MyProvider>
       <App />
-    </Provider>
-  </React.StrictMode>,
+  </MyProvider>,
   document.getElementById('root')
 );
 

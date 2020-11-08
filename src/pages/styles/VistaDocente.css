@@ -1,0 +1,68 @@
+.vistaDocente{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.vistaDocente__centrado{
+    width: 90%;
+    background: #161616;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.herrramientas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fffefe;
+}
+.vistaDocente__header{
+    box-sizing: border-box;
+    padding: 5px;
+    width: 100%;
+    height: 40px;
+    background: #111111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.vistaDocente__titulo{
+    color: #fffefe;
+    font-weight: 700;
+    font-size: 2em;
+}
+.vistaDocente__cerrar{
+
+}
+.vistaDocente__row{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.vistaDocente__opcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 40%;
+    height: 100px;
+    /* background-color: #111111; */
+    color: #a8a8a8;
+    border: 1px solid #a8a8a8;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.vistaDocente__opcion:hover{
+    cursor: pointer;
+    color: #fffefe;
+    border: 1px solid #fffefe;
+    background: #cc2030;
+}

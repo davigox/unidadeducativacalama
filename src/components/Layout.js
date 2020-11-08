@@ -1,10 +1,11 @@
 import React from 'react';
-import Navbar2 from './Navbar2';
+import Navbar from './Navbar';
 
 function Layout (props) {
+    
     return (
         <div>
-            <Navbar2 />
+            <Navbar updateUsuario={props.updateUsuario} getUsuario={props.getUsuario}/>
             {props.children} 
 
         </div>

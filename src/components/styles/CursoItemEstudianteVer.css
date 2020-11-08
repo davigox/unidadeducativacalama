@@ -1,0 +1,278 @@
+.cursoItemEstudianteVer{
+    width: 100%;
+    box-sizing: border-box;
+    border:.5px solid #7165E3;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 5px 8px -5px rgba(113,101,227,1);
+    -moz-box-shadow: 3px 5px 8px -5px rgba(113,101,227,1);
+    box-shadow: 3px 5px 8px -5px rgba(113,101,227,1);
+}
+.cursoItemEstudianteVer__body{
+    display: flex;
+    align-items: center;
+}
+.cursoItemEstudianteVer__ico{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background: #cc2030;
+    border-radius: 50%;
+}
+.Primero{
+    background: #306BF3;
+}
+.Segundo{
+    background: #10182F;
+}
+.Tercero{
+    background: #1CB6EA;
+}
+.Cuarto{
+    background: #ED204D;
+}
+.Quinto{
+    background: #8D30F3;
+}
+.Sexto{
+    background: #FBD133;
+}
+
+.cursoItemEstudianteVer__datos{
+    display: flex;
+    flex-direction: column;
+}
+.cursoItemEstudianteVer__text{
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+    margin: 3px;
+}
+.cursoItemEstudianteVer__text1{
+    font-weight: 600;
+    color: #9EA6BE;
+}
+.cursoItemEstudianteVer__text2{
+    font-weight: 400;
+    color: #1C1939;
+    margin-left: 5px;
+}
+.cursoItemEstudianteVer__opciones{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 0;
+}
+.cursoItemEstudianteVer__img{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px;
+    background: #7165E3;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+.cursoItemEstudianteVer__img img {
+    width: 10px;
+    height: 10px;
+}
+.cursoItemEstudianteVer__button{
+    background: #7C6EFF;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+}
+@media screen and (min-width:320px){
+    .cursoItemEstudianteVer{
+        width: 100%;
+    }
+    .cursoItemEstudianteVer__ico{
+        width: 30px;
+        height: 30px;
+        margin-right: 4px;
+    }
+    .cursoItemEstudianteVer__text{
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+    }
+    .cursoItemEstudianteVer__text1{
+        font-weight: 700;
+        font-size: .8em;
+    }
+    .cursoItemEstudianteVer__text2{
+        font-weight: 400;
+        font-size: .8em;
+    }
+}
+@media screen and (min-width:400px){
+   
+}
+@media screen and (min-width:600px){
+    .cursoItemEstudianteVer{
+        width: 100%;
+    }
+    .cursoItemEstudianteVer__ico{
+        width: 35px;
+        height: 35px;
+        margin-right: 4px;
+    }
+    .cursoItemEstudianteVer__text{
+        display: flex;
+        flex-direction: row;
+        margin: 2px;
+    }
+    .cursoItemEstudianteVer__text1{
+        font-weight: 700;
+        font-size: .9em;
+    }
+    .cursoItemEstudianteVer__text2{
+        font-weight: 400;
+        font-size: .9em;
+    }
+}
+@media screen and (min-width:768px){
+    .cursoItemEstudianteVer{
+        width: 90%;
+    }
+    .cursoItemEstudianteVer__ico{
+        width: 40px;
+        height: 40px;
+        margin-right: 6px;
+    }
+    .cursoItemEstudianteVer__text{
+        display: flex;
+        flex-direction: row;
+        margin: 4px;
+    }
+    .cursoItemEstudianteVer__text1{
+        font-weight: 700;
+        font-size: 1em;
+    }
+    .cursoItemEstudianteVer__text2{
+        font-weight: 400;
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:850px){
+    .cursoItemEstudianteVer{
+        width: 80%;
+    }
+    .cursoItemEstudianteVer__ico{
+        width: 40px;
+        height: 40px;
+        margin-right: 6px;
+    }
+    .cursoItemEstudianteVer__text{
+        display: flex;
+        flex-direction: row;
+        margin: 4px;
+    }
+    .cursoItemEstudianteVer__text1{
+        font-weight: 700;
+        font-size: 1em;
+    }
+    .cursoItemEstudianteVer__text2{
+        font-weight: 400;
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:1024px){
+    .cursoItemEstudianteVer{
+        width: 70%;
+    }
+    .cursoItemEstudianteVer__ico{
+        width: 45px;
+        height: 45px;
+        margin-right: 6px;
+    }
+    .cursoItemEstudianteVer__text{
+        display: flex;
+        flex-direction: row;
+        margin: 4px;
+    }
+    .cursoItemEstudianteVer__text1{
+        font-weight: 700;
+        font-size: 1em;
+    }
+    .cursoItemEstudianteVer__text2{
+        font-weight: 400;
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:1100px){
+    .cursoItemEstudianteVer{
+        width: 70%;
+    }
+    .cursoItemEstudianteVer__ico{
+        width: 45px;
+        height: 45px;
+        margin-right: 6px;
+    }
+    .cursoItemEstudianteVer__text{
+        display: flex;
+        flex-direction: row;
+        margin: 4px;
+    }
+    .cursoItemEstudianteVer__text1{
+        font-weight: 700;
+        font-size: 1em;
+    }
+    .cursoItemEstudianteVer__text2{
+        font-weight: 400;
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:1240px){
+    .cursoItemEstudianteVer{
+        width: 60%;
+    }
+    .cursoItemEstudianteVer__ico{
+        width: 45px;
+        height: 45px;
+        margin-right: 6px;
+    }
+    .cursoItemEstudianteVer__text{
+        display: flex;
+        flex-direction: row;
+        margin: 4px;
+    }
+    .cursoItemEstudianteVer__text1{
+        font-weight: 700;
+        font-size: 1em;
+    }
+    .cursoItemEstudianteVer__text2{
+        font-weight: 400;
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:1440px){
+    .cursoItemEstudianteVer{
+        width: 60%;
+    }
+    .cursoItemEstudianteVer__ico{
+        width: 45px;
+        height: 45px;
+        margin-right: 6px;
+    }
+    .cursoItemEstudianteVer__text{
+        display: flex;
+        flex-direction: row;
+        margin: 4px;
+    }
+    .cursoItemEstudianteVer__text1{
+        font-weight: 700;
+        font-size: 1em;
+    }
+    .cursoItemEstudianteVer__text2{
+        font-weight: 400;
+        font-size: 1em;
+    }
+}

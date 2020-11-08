@@ -1,0 +1,103 @@
+.PreguntaItem{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom:1px solid #CDD0D4 ;
+}
+.PreguntaItem__header{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.PreguntaItem__ico{
+    box-sizing: border-box;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#306BF3;
+    color: #1C1939;
+    font-weight: 700;
+}
+.PreguntaItem__ico img{
+    width: 30px;
+    height: 30px;
+}
+.PreguntaItem__usuario{
+    display: flex;
+    flex-direction: column;
+}
+.PreguntaItem__nombre{
+    font-weight: 700;
+    color: #1C1939;
+}
+.PreguntaItem__fecha{
+    font-size: .7em;
+    color: #9EA6BE;
+}
+.PreguntaItem__body{
+    box-sizing: border-box;
+    margin-top: 5px;
+    width: 100%;
+    font-weight: 400;
+    color: #1C1939;
+}
+.PreguntaItem__footer{
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.PreguntaItem__respuestas{
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #e6aa07;
+    background: #ffecb7;
+    border-radius: 10px;
+    font-size: .9em;
+}
+.PreguntaItem__respuestas img{
+    margin-left: 5px;
+    width: 15px;
+    height: 15px;
+}
+.PreguntaItem__borrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    background: #7165E3;
+    margin-right: 5px;
+}
+.PreguntaItem__borrar img{
+    width: 10px;
+    height: 10px;
+}
+.PreguntaItem__footer__calificacion{
+    box-sizing: border-box;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: #306BF3;
+    background: #b4c9f8;
+    border-radius: 10px;
+    font-weight: 300;
+    margin-right: 5px;
+}
