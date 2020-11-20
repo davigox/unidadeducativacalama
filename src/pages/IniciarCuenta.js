@@ -34,6 +34,7 @@ const IniciarCuenta = (props) => {
                         apellidoMaterno: doc.data().apellidoMaterno,
                         uid: result.user.uid,
                         rol: doc.data().rol,
+                        estado: doc.data().estado,
                         curso: doc.data().curso,
                         codigo: doc.data().codigo
                     })
@@ -66,59 +67,67 @@ const IniciarCuenta = (props) => {
             })
         }
     }
-    return (
+    if (usuarioLogeado.sesion === 'deshabilitado') {
+        return <h1 className="noacceso">Ups! No puedes Iniciar Sesión en el Sistema.</h1>
+    } else {
+        return (
 
-        <div className="iniciarCuenta__container">
-            <div className="iniciarCuenta--centrado">
-                <div className="iniciarCuenta__header">
-                    <div className="iniciarCuenta__titulo">
-                        Bienvenido!
+            <div className="iniciarCuenta__container">
+                <div className="iniciarCuenta--centrado">
+                    <div className="iniciarCuenta__header">
+                        <div className="iniciarCuenta__titulo">
+                            Bienvenido!
+                        </div>
+                        <div className="iniciarCuenta__subtitulo">
+                            Inicia sesión para continuar
+                        </div>
                     </div>
-                    <div className="iniciarCuenta__subtitulo">
-                        Inicia sesión para continuar
-                    </div>
-                </div>
-                <form
-                    className="iniciarCuenta__form"
-                    onSubmit={handleSubmit}
-                >
-                    <label className="iniciarCuenta__form--label"> Correo Electronico Gmail</label>
-                    <input
-                        id="email"
-                        className="iniciarCuenta__form--input"
-                        type="email"
-                        name="email"
-                        value={state.email}
-                        onChange={handleChangeForm}
-                    />
-                    <label className="iniciarCuenta__form--label"> Contraseña</label>
-                    <input
-                        id="signupApellidos"
-                        className="iniciarCuenta__form--input"
-                        type="password"
-                        name="password"
-                        value={state.password}
-                        onChange={handleChangeForm}
-                    />
-                    <div className="iniciaCuenta__texto">
-                        ¿Olvidaste tu contraseña?
-                    </div>
-                    <button
-                        // onClick={this.handleClick} 
-                        id="signupButton" className="iniciarCuenta__form--button"
+                    <form
+                        className="iniciarCuenta__form"
+                        onSubmit={handleSubmit}
                     >
-                        Iniciar Sesión
-                    </button>
-                </form>
-                <div className="iniciarCuenta__footer">
-                    <div className="iniciarCuenta__footer--text">
-                    ¿No tienes una cuenta?-
-                    </div>
-                    <Link to="/crearcuenta"className="iniciarCuenta__footer--link">Regístrate</Link>
+                        <label className="iniciarCuenta__form--label"> Correo Electronico Gmail</label>
+                        <input
+                            id="email"
+                            className="iniciarCuenta__form--input"
+                            type="email"
+                            name="email"
+                            value={state.email}
+                            onChange={handleChangeForm}
+                        />
+                        <label className="iniciarCuenta__form--label"> Contraseña</label>
+                        <input
+                            id="signupApellidos"
+                            className="iniciarCuenta__form--input"
+                            type="password"
+                            name="password"
+                            value={state.password}
+                            onChange={handleChangeForm}
+                        />
+                        <div className="iniciaCuenta__texto">
+                            ¿Olvidaste tu contraseña?
+                        </div>
+                        <button
+                            // onClick={this.handleClick} 
+                            id="signupButton" className="iniciarCuenta__form--button"
+                        >
+                            Iniciar Sesión
+                        </button>
+                    </form>
+                    {
+                        usuarioLogeado.cuenta === 'habilitado' &&
+                        <div className="iniciarCuenta__footer">
+                            <div className="iniciarCuenta__footer--text">
+                                ¿No tienes una cuenta?-
+                            </div>
+                            <Link to="/crearcuenta" className="iniciarCuenta__footer--link">Regístrate</Link>
+                        </div>
+
+                    }
+                    {clave.error && (<h4 className="crearCuenta__error">{clave.mensaje}</h4>)}
                 </div>
-                {clave.error && (<h4 className="crearCuenta__error">{clave.mensaje}</h4>)}
             </div>
-        </div>
-    )
+        )
+    }
 }
 export default IniciarCuenta;

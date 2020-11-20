@@ -23,30 +23,34 @@ const EstudiantesList = (props) => {
         doc.addImage(logo, 'PNG', 15, 15, 10, 10)
         doc.setLineWidth(0.5);
         doc.line(15, 27, 280, 27);
-        
+
         doc.setFontSize(12)
         doc.setTextColor(100)
-        doc.text(`Curso: ${curso.curso}`,20,32)
-        doc.text(`Materia: ${curso.materia}`,20,37)
-        doc.text(`Docente: ${curso.docente}`,20,42)
+        doc.text(`Curso: ${curso.curso}`, 20, 32)
+        doc.text(`Materia: ${curso.materia}`, 20, 37)
+        doc.text(`Docente: ${curso.docente}`, 20, 42)
         doc.setTextColor(30)
         doc.text(`Lista de Calificaciones ${curso.titulo}`, 15, 50);
-        const col = ['Nro.','Apellido Paterno', 'Apellido Materno', 'Nombres', 'Saber/45pts', 'Saber/45pts','Hacer/45pts','Hacer/45pts','Ser/Decidir/45pts']
+        const col = ['N.', 'Apellido Paterno', 'Apellido Materno', 'Nombres', 'Saber/45pts', 'Saber/45pts', 'Saber/45pts', 'Promedio', 'Hacer/45pts', 'Hacer/45pts', 'Promedio', 'Ser/Decidir/10pts', 'Promedio', 'Promedio Total']
         const lista = obtenerListaPdf()
         doc.autoTable({
             head: [col],
             body: lista,
             startY: 55,
+            styles: {
+                cellPadding: 0.5,
+                fontSize: 7
+            }
         })
         // doc.addPage();
         // doc.text("Pagina 2", 20, 20)
         doc.save("ListaCalificaciones.pdf");
     }
-    
+
     const obtenerListaPdf = () => {
         let datos = []
         state.data.map((doc, index) => {
-            let temp = [index+1,doc.apellidoPaterno,doc.apellidoMaterno,doc.nombre,`Respuestas:${doc.respuestas} Calificación:${Math.round(doc.promedioRespuestas*.45)}pts`,`Aportes:${doc.aportes} Calificación:${Math.round(doc.promedioAportes*.45)}pts`,`Preguntas:${doc.preguntas} Calificación:${Math.round(doc.promedioPreguntas*.45)}pts`,`Tareas:${doc.tareas} Calificación:${Math.round(doc.promedioTareas*.45)}pts`,`Notas:${doc.notas} Calificación:${Math.round(doc.promedioNotas*.10)}pts`]
+            let temp = [index + 1, doc.apellidoPaterno, doc.apellidoMaterno, doc.nombre, `Evaluaciones: ${doc.evaluaciones} \nPuntos: ${Math.round(doc.promedioEvaluaciones * .45)}`, `Respuestas: ${doc.respuestas} \nPuntos: ${Math.round(doc.promedioRespuestas * .45)}pts`, `Aportes: ${doc.aportes} \nPuntos: ${Math.round(doc.promedioAportes * .45)}pts`, `${Math.round(((doc.promedioAportes+doc.promedioEvaluaciones+doc.promedioRespuestas)*.45)/3)}pts`, `Preguntas: ${doc.preguntas} \nPuntos: ${Math.round(doc.promedioPreguntas * .45)}pts`, `Tareas: ${doc.tareas} \nPuntos: ${Math.round(doc.promedioTareas * .45)}pts`, `${Math.round(((doc.promedioPreguntas+doc.promedioTareas)*.45)/2)}`, `Apuntes: ${doc.notas} \nPuntos: ${Math.round(doc.promedioNotas * .10)}pts`, `${Math.round(doc.promedioNotas*.10)}`, `${Math.round(((doc.promedioAportes+doc.promedioEvaluaciones+doc.promedioRespuestas)*.45)/3)+Math.round(((doc.promedioPreguntas+doc.promedioTareas)*.45)/2)+Math.round(((doc.promedioNotas)*.10))}pts`]
             datos.push(temp)
         })
         return datos
@@ -71,7 +75,7 @@ const EstudiantesList = (props) => {
     });
     useEffect(() => {
         getCurso()
-    },[])
+    }, [])
     useEffect(() => {
         const unsubscribe = db.collectionGroup('participaciones').orderBy('nombre').where('idTrimestre', '==', props.match.params.idTrimestre).where('rol', '==', 'estudiante').onSnapshot((querySnapshot) => {
             const docs = [];
@@ -124,11 +128,77 @@ const EstudiantesList = (props) => {
                 <button className="boton__imprimir" onClick={imprimirLista}>Lista en PDF</button>
             </div>
             <div className="EstudiantesList__scroll">
+                <div className="EstudianteItem">
+                    <div className="EstudianteItem__header">
+                        <div className="EstudianteItem__ico cabecera">
+                            Nro
+                        </div>
+                        <div className="EstudianteItem__nombres cabecera">
+                            <p className="EstudianteItem__nombre">
+                                {`Apellidos y Nombres`}
+                            </p>
+                        </div>
+
+                        <div className="EstudianteItem__column cabecera">
+                            <div className="EstudianteItem__titulo">
+                                (SABER/45pts)
+                            </div>
+                        </div>
+                        <div className="EstudianteItem__column cabecera">
+                            <div className="EstudianteItem__titulo">
+                                (SABER/45pts)
+                            </div>
+                            
+                        </div>
+                        <div className="EstudianteItem__column cabecera">
+                            <div className="EstudianteItem__titulo">
+                                (SABER/45pts)
+                            </div>
+                        </div>
+                        <div className="EstudianteItem__column cabecera">
+                            <div className="EstudianteItem__titulo">
+                                Promedio
+                            </div>
+                        </div>
+                        
+                        <div className="EstudianteItem__column cabecera">
+                            <div className="EstudianteItem__titulo">
+                                (HACER/45pts)
+                            </div>
+                        </div>
+                        <div className="EstudianteItem__column cabecera">
+                            <div className="EstudianteItem__titulo">
+                                (HACER/45pts)
+                            </div>
+                        </div>
+                        <div className="EstudianteItem__column cabecera">
+                            <div className="EstudianteItem__titulo">
+                                Promedio
+                            </div>
+                        </div>
+                        <div className="EstudianteItem__column cabecera">
+                            <div className="EstudianteItem__titulo">
+                                (SER/DECIDIR/10pts)
+                            </div>
+                        </div>
+                        <div className="EstudianteItem__column cabecera">
+                            <div className="EstudianteItem__titulo">
+                                Promedio
+                            </div>
+                        </div>
+                        <div className="EstudianteItem__column cabecera">
+                            <div className="EstudianteItem__titulo">
+                                Promedio Total
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 {(state.data.length >= 1) ?
                     state.data.map((doc, index) => (
                         <EstudianteItem
                             idTrimestre={doc.idTrimestre}
                             key={index}
+                            numero={index+1}
                             idUsuario={doc.idUsuario}
                             idCurso={props.match.params.idCurso}
                             nombre={doc.nombre}
@@ -144,6 +214,8 @@ const EstudiantesList = (props) => {
                             notas={doc.notas}
                             promedioTareas={doc.promedioTareas}
                             tareas={doc.tareas}
+                            promedioEvaluaciones={doc.promedioEvaluaciones}
+                            evaluaciones={doc.evaluaciones}
                         />
                     ))
                     : <div>

@@ -9,8 +9,11 @@ import * as firebase from 'firebase/app';
 
 import { db } from '../firebase';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { MyContext } from '../MyProvider';
 
 const RespuestaItem = (props) => {
+    const {usuarioLogeado} = useContext(MyContext)
     const [state, setState] = useState({
         loading: false,
         nota: props.nota,
@@ -120,7 +123,7 @@ const RespuestaItem = (props) => {
                     <>
                         calificación sobre 100:
                         <input
-                            className="contenidoItem__input"
+                            className="input__item"
                             type="number"
                             min="10"
                             max="100"
@@ -128,10 +131,13 @@ const RespuestaItem = (props) => {
                             value={state.nota}
                             onChange={handleChange}
                         />
-                        <button onClick={actualizarNota} className="contenidoItem__button" disabled={state.loading}>
-                            {!state.loading && <div>calificar</div>}
-                            {state.loading && <div className="spinner"></div>}
-                        </button>
+                        {
+                            usuarioLogeado.trimestres !== 'deshabilitado' &&
+                            <button onClick={actualizarNota} className="contenidoItem__button" disabled={state.loading}>
+                                {!state.loading && <div>calificar</div>}
+                                {state.loading && <div className="spinner"></div>}
+                            </button>
+                        }
                     </>
                 }
                 {/* <div

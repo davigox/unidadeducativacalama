@@ -37,3 +37,10 @@ a.link-unstyled:hover {
   margin-top: 10px;
   margin-bottom: 20px;
 }
+.noacceso{
+  color: #7165E3;
+  font-weight: 400;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

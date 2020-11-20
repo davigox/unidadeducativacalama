@@ -100,7 +100,7 @@ const YoutubeForm = (props) => {
         <div className="YoutubeForm">
             <div className="YoutubeForm__header">
                 <div className="YoutubeForm__titulo">
-                    Envia un Video de Youtube
+                    Envía un Video de Youtube
                     </div>
             </div>
             <form

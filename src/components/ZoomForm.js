@@ -93,7 +93,7 @@ const ZoomForm = (props) => {
         <div className="ZoomForm">
             <div className="ZoomForm__header">
                 <div className="ZoomForm__titulo">
-                    Comparte el enlace a una reunion de Zoom
+                    Comparte el enlace a una reunión de Zoom
                     </div>
             </div>
             <form
@@ -101,7 +101,7 @@ const ZoomForm = (props) => {
                 className="ZoomForm__form"
             >
                 <label className="ZoomForm__label">
-                    Nombre de la reunion:
+                    Nombre de la reunión:
                     </label>
                 <input
                     className="ZoomForm__input"

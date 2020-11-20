@@ -1,11 +1,14 @@
 import React from 'react';
+import { useContext } from 'react';
 import { useState } from 'react';
 
 import * as XLSX from 'xlsx';
 import CargarUsuariosItem from '../components/CargarUsuariosItem';
+import { MyContext } from '../MyProvider';
 
-
+import './styles/CargarUsuarios.css'
 const CargarUsuarios = () => {
+    const {usuarioLogeado} = useContext(MyContext)
     const [state, setState] = useState({
         data: []
     })
@@ -35,31 +38,39 @@ const CargarUsuarios = () => {
         const file = e.target.files[0];
         readExcel(file)
     }
-    return (
-        <div>
-            Cargar Usuarios
-            <input type="file" onChange={handleChangeFile} />
-            <div className="EstudiantesList__scroll">
-                {
-                    state.data.map((doc, index) => (
-                        <CargarUsuariosItem
-                            index={index + 1}
-                            key={index}
-                            apellidoPaterno={doc.apellidoPaterno === undefined ? "" : doc.apellidoPaterno}
-                            apellidoMaterno={doc.apellidoMaterno === undefined ? "" : doc.apellidoMaterno}
-                            nombres={doc.nombres}
-                            email={doc.email}
-                            password={doc.password}
-                            rol={doc.rol}
-                            curso={doc.curso}
-                        />
+    if (usuarioLogeado.rol !== 'administrador') {
+        return <h1 className="noacceso">Ups! No tienes acceso a estos datos.</h1>
+    } else {
+        return (
+            <div className="CargarUsuarios">
+                <div className="CargarUsuarios__form">
+                    <div className="CargarUsuarios__titulo">
+                        Cargar Usuarios
+                    </div>
+                    <input className="CargarUsuarios__input" type="file" onChange={handleChangeFile} />
+                </div>
+                <div className="EstudiantesList__scroll">
+                    {
+                        state.data.map((doc, index) => (
+                            <CargarUsuariosItem
+                                index={index + 1}
+                                key={index}
+                                apellidoPaterno={doc.apellidoPaterno === undefined ? "" : doc.apellidoPaterno}
+                                apellidoMaterno={doc.apellidoMaterno === undefined ? "" : doc.apellidoMaterno}
+                                nombres={doc.nombres}
+                                email={doc.email}
+                                password={doc.password}
+                                rol={doc.rol}
+                                curso={doc.curso}
+                            />
 
-                    )
-                    )
-                }
+                        )
+                        )
+                    }
+                </div>
             </div>
-        </div>
-    )
+        )
+    }
 }
 
 export default CargarUsuarios

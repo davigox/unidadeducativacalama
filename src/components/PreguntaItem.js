@@ -10,6 +10,8 @@ import user from '../images/user.svg';
 import borrar from '../images/borrar.svg';
 import { db } from '../firebase';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { MyContext } from '../MyProvider';
 
 const PreguntaItem = (props) => {
     const [state, setState] = useState({
@@ -17,6 +19,7 @@ const PreguntaItem = (props) => {
         respuestas: false,
         nota: props.nota,
     })
+    const {usuarioLogeado} = useContext(MyContext)
     const [contenido, setContenido] = useState({
         nota: props.nota,
     })
@@ -29,16 +32,16 @@ const PreguntaItem = (props) => {
     const handleChange = (e) => {
         setState({
             ...state,
-            [e.target.name] : e.target.value,
+            [e.target.name]: e.target.value,
         })
     }
-    const actualizarNota = async() => {
-        if( contenido.nota === state.nota ){
+    const actualizarNota = async () => {
+        if (contenido.nota === state.nota) {
             console.log('no cambio nada y no hacer nada')
         }
-        else{
-            if(state.nota > -1 && state.nota < 101){
-                if(window.confirm(`Seguro que quiere calificar con ${state.nota} la pregunta de ${props.nombre}?`)){
+        else {
+            if (state.nota > -1 && state.nota < 101) {
+                if (window.confirm(`Seguro que quiere calificar con ${state.nota} la pregunta de ${props.nombre}?`)) {
                     setState({
                         ...state,
                         loading: true,
@@ -47,7 +50,7 @@ const PreguntaItem = (props) => {
                     const preguntaRef = db.collection('preguntasCursos').doc(props.idCurso).collection('preguntas').doc(props.idPregunta)
                     return db.runTransaction(transaction => {
                         return transaction.get(participacionesRef).then(res => {
-                            if(!res.exists){
+                            if (!res.exists) {
                                 console.log('Documento no existe')
                             }
                             let newPreguntas = res.data().preguntas + 1;
@@ -77,7 +80,7 @@ const PreguntaItem = (props) => {
                     //     nota: parseInt(state.nota),
                     // })
                 }
-            }else{
+            } else {
                 window.alert('La calificación no es validad, intente nuevamente')
             }
         }
@@ -124,16 +127,16 @@ const PreguntaItem = (props) => {
                 {
                     props.calificado &&
                     <div className="PreguntaItem__footer__calificacion">
-                    Calificado con :
+                        Calificado con :
                         {state.nota}
                     </div>
                 }
                 {
-                    !props.calificado && 
+                    !props.calificado &&
                     <>
-                    calificación sobre 100:
+                        calificación sobre 100:
                         <input
-                            className="contenidoItem__input"
+                            className="input__item"
                             type="number"
                             min="10"
                             max="100"
@@ -141,10 +144,13 @@ const PreguntaItem = (props) => {
                             value={state.nota}
                             onChange={handleChange}
                         />
-                    <button onClick={actualizarNota} className="contenidoItem__button" disabled={state.loading}>
-                        {!state.loading && <div>calificar</div>}
-                        {state.loading && <div className="spinner"></div>}
-                    </button>
+                        {
+                            usuarioLogeado.trimestres !== 'deshabilitado' &&
+                            <button onClick={actualizarNota} className="contenidoItem__button" disabled={state.loading}>
+                                {!state.loading && <div>calificar</div>}
+                                {state.loading && <div className="spinner"></div>}
+                            </button>
+                        }
                     </>
 
                 }

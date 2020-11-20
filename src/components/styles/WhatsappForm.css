@@ -1,41 +1,54 @@
 .WhatsappForm{
     display: flex;
+    flex-direction: column;display: flex;
+    width: 98%;
     flex-direction: column;
+    /* border: 1px solid #dadada; */
+    align-items: center;
+    background: #FBFBFB;
 }
 .WhatsappForm__header{
     display: flex;
     justify-content: center;
+    background: #07AC6A;
+    width: 100%;
+    line-height: 30px;
 }
 .WhatsappForm__titulo{
-    color: #00bb2d;
+    color: #FEFFFE;
     font-weight: 700;
 }
 .WhatsappForm__form{
+    width: 98%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .WhatsappForm__label{
+    margin-top: 5px;
     margin-left: 0;
     margin-right: auto;
     font-size: .8em;
+    font-weight: 700;
+    color: #424242;
 }
 .WhatsappForm__input{
     width: 100%;
     height: 20px;
     color: #2C2948;
-    background: #F7F7F7;
-    border: 1px solid #00bb2d;
-    border-radius: 10px;
+    background: #EEEEEE;
+    border: 1px solid #F7F7F7;
+    border-radius: 3px;
     outline: none;
     margin-bottom: 5px;
 }
 .WhatsappForm__button{
-    width: 100%;
+    width: 90%;
     border: none;
     margin-top: 5px;
-    border-radius: 10px;
-    background: #00bb2d;
+    border-radius: 3px;
+    background: #07AC6A;
+    margin-bottom: 10px;
 }
 .WhatsappForm__error{
 

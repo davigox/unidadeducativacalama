@@ -97,6 +97,8 @@ const TareaForm = (props) => {
                                 aportes: 0,
                                 promedioNotas: 0,
                                 notas: 0,
+                                promedioEvaluaciones: 0,
+                                evaluaciones: 0,
                             })
                             console.log('Participacion creada correctamente')
                             await db.collection('tareasCursos').doc(props.idCurso).collection('tareas').doc().set({
@@ -163,61 +165,61 @@ const TareaForm = (props) => {
         <>
             {
                 (props.estado || usuarioLogeado.rol === "docente") ?
-                <div className="nuevoYoutube">
-                    <div className="nuevoYoutube__centrado">
-                        <div className="nuevoYoutube__header">
-                            <div className="nuevoYoutube__titulo">
-                                Envia tu tarea con un archivo de Google Drive
+                    <div className="nuevoYoutube">
+                        <div className="nuevoYoutube__centrado">
+                            <div className="nuevoYoutube__header">
+                                <div className="nuevoYoutube__titulo">
+                                    Envia tu tarea con un archivo de Google Drive
                     </div>
-                        </div>
-                        <form
-                            onSubmit={handleSubmit}
-                            className="nuevoYoutube__form"
-                        >
-                            <label className="nuevoYoutube__label">
-                                Título del archivo:
-                    </label>
-                            <input
-                                className="nuevoYoutube__input"
-                                type="text"
-                                name="titulo"
-                                value={state.titulo}
-                                onChange={handleChange}
-                            />
-                            <label className="nuevoYoutube__label">
-                                Descripción del archivo:
-                    </label>
-                            <input
-                                className="nuevoYoutube__input"
-                                type="text"
-                                name="descripcion"
-                                value={state.descripcion}
-                                onChange={handleChange}
-                            />
-                            <label className="nuevoYoutube__label">
-                                Enlace de Drive :
-                    </label>
-                            <input
-                                className="nuevoYoutube__input"
-                                type="text"
-                                name="enlace"
-                                value={state.enlace}
-                                onChange={handleChange}
-                            />
-                            <button
-                                id="signupButton" className="nuevoYoutube__button" disabled={state.loading}
+                            </div>
+                            <form
+                                onSubmit={handleSubmit}
+                                className="nuevoYoutube__form"
                             >
-                                {!state.loading && <img src={enviar} alt="enviar" />}
-                                {state.loading && <div className="spinner"></div>}
-                            </button>
-                        </form>
-                        {state.error && (<h4 className="nuevoYoutube__error">{state.mensaje}</h4>)}
+                                <label className="nuevoYoutube__label">
+                                    Título del archivo:
+                    </label>
+                                <input
+                                    className="nuevoYoutube__input"
+                                    type="text"
+                                    name="titulo"
+                                    value={state.titulo}
+                                    onChange={handleChange}
+                                />
+                                <label className="nuevoYoutube__label">
+                                    Descripción del archivo:
+                    </label>
+                                <input
+                                    className="nuevoYoutube__input"
+                                    type="text"
+                                    name="descripcion"
+                                    value={state.descripcion}
+                                    onChange={handleChange}
+                                />
+                                <label className="nuevoYoutube__label">
+                                    Enlace de Drive :
+                    </label>
+                                <input
+                                    className="nuevoYoutube__input"
+                                    type="text"
+                                    name="enlace"
+                                    value={state.enlace}
+                                    onChange={handleChange}
+                                />
+                                <button
+                                    id="signupButton" className="nuevoYoutube__button" disabled={state.loading}
+                                >
+                                    {!state.loading && <img src={enviar} alt="enviar" />}
+                                    {state.loading && <div className="spinner"></div>}
+                                </button>
+                            </form>
+                            {state.error && (<h4 className="nuevoYoutube__error">{state.mensaje}</h4>)}
+                        </div>
                     </div>
-                </div>
-                :
-                <div>
-                    El contenido a sido bloequeado.
-                    Ya no se permite enviar Tareas.
+                    :
+                    <div>
+                        El contenido a sido bloequeado.
+                        Ya no se permite enviar Tareas.
                 </div>
             }
         </>

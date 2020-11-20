@@ -1,0 +1,86 @@
+.ListaItem{
+    margin-bottom: 5px;
+    width: fit-content;
+    /* border:.5px solid #d3d1e2; */
+    border-radius: 2px;
+    background: #ffffff;
+    box-sizing: border-box;
+    /* box-shadow:  0px 1px 5px #ffffff; */
+}
+.ListaItem__header{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.ListaItem__column{
+    box-sizing: border-box;
+    height: 80px;
+    font-weight: 700;
+    font-size: .8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #D1D1D1;
+}
+.ListaItem__row{
+    display: flex;
+}
+.ListaItem__ico{
+    height: 100%;
+    width: 40px;
+    min-width: 40px;
+    font-weight: 700;
+    font-size: 1em;
+    background: cornflowerblue;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-right: 1px solid #D1D1D1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ListaItem__nombre{
+    color: #1C1939;
+}
+.ListaItem__apellido{
+    color: #1C1939;
+}
+.ListaItem__titulo{
+    box-sizing: border-box;
+    width: 120px;
+    padding-left: 4px;
+    padding-right: 4px;
+    color: #424242;
+    font-weight: 700;
+    font-size: 0.9em;
+    margin-right: 3px;
+
+}
+.ListaItem__tituloCorreo{
+    box-sizing: border-box;
+    width: 246px;
+    padding-left: 4px;
+    padding-right: 4px;
+    color: #1C1939;
+    font-size: 0.9em;
+    margin-right: 3px;
+}
+.ListaItem__input{
+    box-sizing: border-box;
+    width: 120px;
+    margin-right: 3px;
+}
+.ListaItem__inputCorreo{
+    box-sizing: border-box;
+    width: 243px;
+    margin-right: 3px;
+}
+.habilitado{
+    background: #23ac50;
+}
+.deshabilitado{
+    background: #cc2030;
+}

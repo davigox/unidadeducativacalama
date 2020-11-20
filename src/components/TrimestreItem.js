@@ -170,9 +170,9 @@ const TrimestreItem = (props) => {
                     <Link className="TrimestreItem__img" to={`/estudianteslist/${props.idCurso}/${props.idTrimestre}`}>
                         <img src={lista} alt="lista" />
                     </Link>
-                    {/* <Link className="TrimestreItem__img" to={`/nuevocuestionario/${props.idCurso}/${props.idTrimestre}`}>
+                    <Link className="TrimestreItem__img" to={`/nuevocuestionario/${props.idCurso}/${props.idTrimestre}`}>
                         <img src={cuestionario} alt="lista" />
-                    </Link> */}
+                    </Link>
                     <div
                         onClick={classroomForm}
                         className=""

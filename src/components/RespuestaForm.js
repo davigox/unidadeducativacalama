@@ -89,6 +89,8 @@ const RespuestaForm = (props) => {
                                 aportes: 0,
                                 promedioNotas: 0,
                                 notas: 0,
+                                promedioEvaluaciones: 0,
+                                evaluaciones: 0,
                             })
                             console.log('Participacion creada correctamente')
                             await db.collection('respuestasCursos').doc(props.idCurso).collection('respuestas').doc().set({

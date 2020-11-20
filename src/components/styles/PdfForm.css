@@ -1,43 +1,54 @@
 .PdfForm{
     display: flex;
+    flex-direction: column;display: flex;
+    width: 98%;
     flex-direction: column;
-    margin-left: 5px;
-    margin-right: 5px;
+    /* border: 1px solid #dadada; */
+    align-items: center;
+    background: #FBFBFB;
 }
 .PdfForm__header{
     display: flex;
     justify-content: center;
+    background: #e6aa07;
+    width: 100%;
+    line-height: 30px;
 }
 .PdfForm__titulo{
-    color: #e6aa07;
+    color: #FEFFFE;
     font-weight: 700;
 }
 .PdfForm__form{
+    width: 98%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .PdfForm__label{
+    margin-top: 5px;
     margin-left: 0;
     margin-right: auto;
     font-size: .8em;
+    font-weight: 700;
+    color: #424242;
 }
 .PdfForm__input{
     width: 100%;
     height: 20px;
     color: #2C2948;
-    background: #F7F7F7;
-    border: 1px solid #e6aa07;
-    border-radius: 10px;
+    background: #EEEEEE;
+    border: 1px solid #F7F7F7;
+    border-radius: 3px;
     outline: none;
     margin-bottom: 5px;
 }
 .PdfForm__button{
-    width: 100%;
+    width: 90%;
     border: none;
     margin-top: 5px;
-    border-radius: 10px;
+    border-radius: 3px;
     background: #e6aa07;
+    margin-bottom: 10px;
 }
 .PdfForm__error{
 

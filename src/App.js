@@ -32,6 +32,9 @@ import GeneralDocentesList from './pages/GeneralDocentesList';
 import CargarUsuarios from './pages/CargarUsuarios';
 import Cuestionario from './pages/Cuestionario';
 import NuevoCuestionario from './pages/NuevoCuestionario';
+import EditarUsuario from './pages/EditarUsuario';
+import CursosDocentesList from './pages/CursosDocentesList';
+import OpcionesSistema from './pages/OpcionesSistema';
 
 
 
@@ -42,7 +45,8 @@ function App(props) {
     rol: 'sin_rol',
     displayName: 'Sin Usuario',
     uid: 'none',
-    curso: 'Sin Curso'
+    curso: 'Sin Curso',
+    trimestres: true,
   })
   const cleanUsuario = () => {
     setUsuario({
@@ -81,15 +85,26 @@ function App(props) {
         console.log("con user ", user)
         db.collection('users').doc(user.uid).get().then(doc => {
           if (doc.exists) {
-            setUsuarioLogeado({
-              ...usuarioLogeado,
-              usuario: doc.data().nombre,
-              apellidoPaterno: doc.data().apellidoPaterno,
-              apellidoMaterno: doc.data().apellidoMaterno,
-              uid: user.uid,
-              curso: doc.data().curso,
-              codigo: doc.data().codigo,
-              rol: doc.data().rol,
+            db.collection('sistema').doc('calama').get().then(docSis => {
+              if (docSis.exists) {
+                setUsuarioLogeado({
+                  ...usuarioLogeado,
+                  usuario: doc.data().nombre,
+                  apellidoPaterno: doc.data().apellidoPaterno,
+                  apellidoMaterno: doc.data().apellidoMaterno,
+                  uid: user.uid,
+                  estado: doc.data().estado,
+                  curso: doc.data().curso,
+                  codigo: doc.data().codigo,
+                  rol: doc.data().rol,
+                  trimestres: docSis.data().trimestres,
+                  cuenta: docSis.data().crearCuentas,
+                  sesion: docSis.data().iniciarSesion
+                })
+                console.log('datos de sistema agregados', doc.data().trimestres)
+              } else {
+                console.log("no existe")
+              }
             })
             console.log('usuario puesto en contexto')
           } else {
@@ -97,14 +112,18 @@ function App(props) {
           }
         })
       } else {
-        console.log("no user")
-        setUsuarioLogeado({
-          usuario: '',
-          apellidoPaterno: '',
-          apellidoMaterno: '',
-          curso: '',
-          uid: '',
-          rol: '',
+        db.collection('sistema').doc('calama').get().then(docSis => {
+          if (docSis.exists) {
+            setUsuarioLogeado({
+              ...usuarioLogeado,
+              trimestres: docSis.data().trimestres,
+              cuenta: docSis.data().crearCuentas,
+              sesion: docSis.data().iniciarSesion
+            })
+            console.log('datos de sistema agregados')
+          } else {
+            console.log("no existe")
+          }
         })
       }
     });
@@ -146,33 +165,52 @@ function App(props) {
             exact
             path="/generalList"
             render={props => (
-              <GeneralList {...props}  />)
+              <GeneralList {...props} />)
             }
           />
           <Route
             exact
             path="/generaldocenteslist"
             render={props => (
-              <GeneralDocentesList {...props}  />)
+              <GeneralDocentesList {...props} />)
             }
           />
           <Route
             exact
             path="/miperfil/:idUsuario"
             render={props => (
-              <MiPerfil {...props}  />)
+              <MiPerfil {...props} />)
+            }
+          />
+          <Route
+            exact
+            path="/editarusuario/:idUsuario"
+            render={props => (
+              <EditarUsuario {...props} />)
+            }
+          />
+          <Route
+            exact
+            path="/cursosdocenteslist"
+            render={props => (
+              <CursosDocentesList {...props} />)
+            }
+          />
+          <Route
+            exact
+            path="/opcionessistema"
+            render={props => (
+              <OpcionesSistema {...props} />)
             }
           />
 
-
-
-            {/* DOCENTE */}
+          {/* DOCENTE */}
           <Route
             exact
             path="/miscursosdocente/:idDocente"
             render={props => (
-            <MisCursosDocente {...props} />)
-          }
+              <MisCursosDocente {...props} />)
+            }
           />
           <Route
             exact
@@ -268,7 +306,7 @@ function App(props) {
           />
           <Route
             exact
-            path="/cuestionario/:idCuestionario/:idTrimestre"
+            path="/cuestionario/:idContenido/:idTrimestre"
             render={props => (
               <Cuestionario {...props} />)
             }

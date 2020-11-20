@@ -74,7 +74,7 @@ const CursoDetalle = (props) => {
         aportes: false,
         notas: false,
         tareas: false,
-        contenidos: false,
+        contenidos: true,
     })
     const handleChecked = (e) => {
         if (e.target.value === 'preguntas') {
@@ -240,7 +240,7 @@ const CursoDetalle = (props) => {
                                 <label
                                     htmlFor="notas"
                                 >
-                                    Notas
+                                    Apuntes
                                 </label>
                             </>
                         }

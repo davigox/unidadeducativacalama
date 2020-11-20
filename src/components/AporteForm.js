@@ -86,6 +86,8 @@ const AporteForm = (props) => {
                                 aportes: 0,
                                 promedioNotas: 0,
                                 notas: 0,
+                                promedioEvaluaciones: 0,
+                                evaluaciones: 0,
                             })
                             console.log('Participacion creada correctamente')
                             await db.collection('aportesCursos').doc(props.idCurso).collection('aportes').doc().set({
@@ -141,38 +143,38 @@ const AporteForm = (props) => {
         <>
             {
                 (props.estado || usuarioLogeado.rol === "docente") ?
-                <div className="PreguntaForm">
-                    <div className="PreguntaForm__centrado">
-                        <div className="PreguntaForm__header">
-                            <div className="PreguntaForm__titulo">
-                                Escribe una aporte para el contenido
+                    <div className="PreguntaForm">
+                        <div className="PreguntaForm__centrado">
+                            <div className="PreguntaForm__header">
+                                <div className="PreguntaForm__titulo">
+                                    Escribe una aporte para el contenido
                 </div>
-                        </div>
-                        <form
-                            onSubmit={handleSubmit}
-                            className="PreguntaForm__form"
-                        >
-                            <input
-                                className="PreguntaForm__input"
-                                type="text"
-                                name="aporte"
-                                value={state.aporte}
-                                onChange={handleChange}
-                            />
-                            <button
-                                id="signupButton" className="PreguntaForm__button" disabled={state.loading}
+                            </div>
+                            <form
+                                onSubmit={handleSubmit}
+                                className="PreguntaForm__form"
                             >
-                                {!state.loading && <img src={enviar} alt="enviar" />}
-                                {state.loading && <div className="spinner"></div>}
-                            </button>
-                        </form>
-                        {state.error && (<h4 className="PreguntaForm__error">{state.mensaje}</h4>)}
+                                <input
+                                    className="PreguntaForm__input"
+                                    type="text"
+                                    name="aporte"
+                                    value={state.aporte}
+                                    onChange={handleChange}
+                                />
+                                <button
+                                    id="signupButton" className="PreguntaForm__button" disabled={state.loading}
+                                >
+                                    {!state.loading && <img src={enviar} alt="enviar" />}
+                                    {state.loading && <div className="spinner"></div>}
+                                </button>
+                            </form>
+                            {state.error && (<h4 className="PreguntaForm__error">{state.mensaje}</h4>)}
+                        </div>
                     </div>
-                </div>
-                :
-                <div>
-                    El contenido a sido bloequeado.
-                    Ya no se permite realizar Aportes.
+                    :
+                    <div>
+                        El contenido a sido bloequeado.
+                        Ya no se permite realizar Aportes.
                 </div>
             }
         </>

@@ -24,6 +24,16 @@
     border-radius: 10px;
     outline: none;
 }
+.NotaForm__input{
+    width: 95%;
+    min-width: 75px;
+    height: 35px;
+    color: #2C2948;
+    background: #F7F7F7;
+    border: 1px solid #7165E3;
+    border-radius: 10px;
+    outline: none;
+}
 .PreguntaForm__input:focus{
     background: #7265e334;
 }

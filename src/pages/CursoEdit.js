@@ -64,7 +64,7 @@ const CursoEdit = (props) => {
     const ocultarForm = () => {
         setState({
             ...state,
-            form: false,
+            form: true,
         })
     }
     const handleChange = (e) => {
@@ -122,7 +122,7 @@ const CursoEdit = (props) => {
         aportes: false,
         notas: false,
         tareas: false,
-        contenidos: false,
+        contenidos: true,
     })
     const handleChecked = (e) => {
         if (e.target.value === 'preguntas') {
@@ -284,7 +284,7 @@ const CursoEdit = (props) => {
                                 <label
                                     htmlFor="notas"
                                 >
-                                    Notas
+                                    Apuntes
                                 </label>
                             </>
                         }

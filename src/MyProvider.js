@@ -14,6 +14,9 @@ const MyProvider = ({ children }) => {
         url: '',
         descripcion: '',
         titulo: '',
+        trimestres: '',
+        sesion: '',
+        cuenta: ''
 
     })
     return (

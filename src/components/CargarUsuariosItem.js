@@ -24,6 +24,7 @@ const CargarUsuariosItem = (props) => {
                 email: props.email,
                 curso: props.curso,
                 codigo: codigo,
+                estado: "habilitado",
                 fecha: new Date(),
                 rol: props.rol,
             }).then(() => {

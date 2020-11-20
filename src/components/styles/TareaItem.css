@@ -60,8 +60,8 @@
 }
 .TareaItem__text{
     word-wrap: break-word;
-    color:#1C1939;
-    font-weight: 300;
+    font-weight: 700;
+    color: #1C1939;
     margin-bottom: 5px;
 }
 .TareaItem__opciones{

@@ -6,8 +6,11 @@ import borrar from '../images/borrar.svg';
 import user from '../images/user.svg';
 
 import './styles/AporteItem.css';
+import { useContext } from 'react';
+import { MyContext } from '../MyProvider';
 
 const AporteItem = (props) => {
+    const {usuarioLogeado} = useContext(MyContext)
     const [state, setState] = useState({
         loading: false,
         nota: props.nota,
@@ -116,7 +119,7 @@ const AporteItem = (props) => {
                     <>
                         calificación sobre 100:
                         <input
-                            className="contenidoItem__input"
+                            className="input__item"
                             type="number"
                             min="10"
                             max="100"
@@ -124,10 +127,13 @@ const AporteItem = (props) => {
                             value={state.nota}
                             onChange={handleChange}
                         />
-                        <button onClick={actualizarNota} className="contenidoItem__button">
-                            {!state.loading && <div>calificar</div>}
-                            {state.loading && <div className="spinner"></div>}
-                        </button>
+                        {
+                            usuarioLogeado.trimestres !== 'deshabilitado' &&
+                            <button onClick={actualizarNota} className="contenidoItem__button">
+                                {!state.loading && <div>calificar</div>}
+                                {state.loading && <div className="spinner"></div>}
+                            </button>
+                        }
                     </>
                 }
                 {/* <div

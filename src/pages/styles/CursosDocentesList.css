@@ -1,0 +1,33 @@
+.DocenteItem{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    background: #ffeffe;
+    margin-bottom: 10px;
+}
+.DocenteItem__datos{
+    font-size: .9em;
+    font-weight: 700;
+}
+
+.DocenteItem__opciones{
+    display: flex;
+    justify-content: flex-end;
+}
+.DocenteItem__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3c67d5;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.DocenteItem__img img{
+    width: 15px;
+    height: 15px;
+}

@@ -1,0 +1,28 @@
+.CargarUsuarios{
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.CargarUsuarios__form{
+    display: flex;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-items: center;
+    background: #FBFBFB;
+}
+.CargarUsuarios__titulo{
+    display: flex;
+    justify-content: center;
+    background: #076395;
+    width: 100%;
+    line-height: 30px;
+    color: #ffeffe;
+    font-weight: 700;
+}
+.CargarUsuarios__input{
+    height: 30px;
+    margin-top: 10px;
+    color: #2C2948;
+}

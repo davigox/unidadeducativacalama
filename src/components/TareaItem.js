@@ -6,8 +6,11 @@ import user from '../images/user.svg';
 import ver from '../images/ver.svg';
 import play from '../images/play.svg';
 import './styles/TareaItem.css';
+import { useContext } from 'react';
+import { MyContext } from '../MyProvider';
 
 const TareaItem = (props) => {
+    const {usuarioLogeado} = useContext(MyContext)
     const [state, setState] = useState({
         loading: false,
         nota: props.nota,
@@ -125,7 +128,7 @@ const TareaItem = (props) => {
                     <>
                         calificación sobre 100:
                         <input
-                            className="TareaItem__input"
+                            className="input__item"
                             type="number"
                             min="10"
                             max="100"
@@ -133,10 +136,13 @@ const TareaItem = (props) => {
                             value={state.nota}
                             onChange={handleChange}
                         />
-                        <button onClick={actualizarNota} className="TareaItem__button" disabled={state.loading}>
-                            {!state.loading && <div>calificar</div>}
-                            {state.loading && <div className="spinner"></div>}
-                        </button>
+                        {
+                            usuarioLogeado.trimestres !== 'deshabilitado' &&
+                            <button onClick={actualizarNota} className="TareaItem__button" disabled={state.loading}>
+                                {!state.loading && <div>calificar</div>}
+                                {state.loading && <div className="spinner"></div>}
+                            </button>
+                        }
                     </>
                 }
                 <div className="TareaItem__img">

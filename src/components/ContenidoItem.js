@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { db } from '../firebase';
 
 import editar from '../images/editar.svg';
+import cuestionario from '../images/cuestionario.svg';
 import borrar from '../images/borrar.svg';
 import guardar from '../images/guardar.svg';
 import whatsapp from '../images/grupo_whatsapp.svg';
@@ -158,6 +159,10 @@ const ContenidoItem = (props) => {
             <div className="contenidoItem__body">
                 <div className="contenidoItem__ico">
                     {
+                        props.tipo === 'cuestionario' &&
+                        <img src={cuestionario} alt="play" />
+                    }
+                    {
                         props.tipo === 'video' &&
                         <img src={youtube} alt="play" />
                     }
@@ -206,18 +211,21 @@ const ContenidoItem = (props) => {
                             />
                         </div>
                     }
-                    <div className="contenidoItem__row">
-                        <label className="contenidoItem__label">
-                            Enlace :
+                    {
+                        props.tipo !== 'cuestionario' &&
+                        <div className="contenidoItem__row">
+                            <label className="contenidoItem__label">
+                                Enlace :
                         </label>
-                        <input
-                            className="contenidoItem__text"
-                            type="text"
-                            name="enlace"
-                            value={state.enlace}
-                            onChange={handleChange}
-                        />
-                    </div>
+                            <input
+                                className="contenidoItem__text"
+                                type="text"
+                                name="enlace"
+                                value={state.enlace}
+                                onChange={handleChange}
+                            />
+                        </div>
+                    }
                 </div>
             </div>
             <div className="contenidoItem__opciones">
@@ -245,7 +253,7 @@ const ContenidoItem = (props) => {
                     />
                 </div>
                 {
-                    (props.tipo !== 'whatsapp' && props.tipo !== 'zoom' && props.tipo !== 'classroom') &&
+                    (props.tipo !== 'cuestionario' && props.tipo !== 'whatsapp' && props.tipo !== 'zoom' && props.tipo !== 'classroom') &&
                     <div className="contenidoItem__img">
                         <img src={ver} alt="borrar"
                             onClick={handleClick}
@@ -261,6 +269,16 @@ const ContenidoItem = (props) => {
                         >
                             <img src={ver} alt="editar" />
                         </a>
+                    </div>
+                }
+                {
+                    (props.tipo == 'cuestionario') &&
+                    <div className="contenidoItem__img">
+                        <Link
+                            to={`/cuestionario/${props.idContenido}/${props.idTrimestre}`}
+                        >
+                            <img src={ver} alt="editar" />
+                        </Link>
                     </div>
                 }
             </div>

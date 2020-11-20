@@ -4,6 +4,7 @@ import { db } from '../firebase';
 import { useState } from 'react';
 
 import editar from '../images/editar.svg';
+import cuestionario from '../images/cuestionario.svg';
 import arrow from '../images/arrow.svg';
 import play from '../images/play.svg';
 import ver from '../images/ver.svg';
@@ -24,7 +25,7 @@ const ContenidoItemEstudiante = (props) => {
         marcado: false,
     })
     const handleClick = () => {
-            props.ponerVideo(props.enlace, props.titulo, props.descripcion, props.idTrimestre, props.idContenido, props.estado)
+        props.ponerVideo(props.enlace, props.titulo, props.descripcion, props.idTrimestre, props.idContenido, props.estado)
     }
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -33,7 +34,11 @@ const ContenidoItemEstudiante = (props) => {
         <div className="contenidoItem">
             <div className="contenidoItem__body">
                 <div className="contenidoItem__ico">
-                {
+                    {
+                        props.tipo === 'cuestionario' &&
+                        <img src={cuestionario} alt="play" />
+                    }
+                    {
                         props.tipo === 'video' &&
                         <img src={youtube} alt="play" />
                     }
@@ -56,24 +61,47 @@ const ContenidoItemEstudiante = (props) => {
                 </div>
                 <div className="contenidoItem__column">
                     <div className="contenidoItem__row">
-                        <label className="contenidoItem__label">
+                        <label className="contenidoItemEstudiante__label">
                             Contenido : {props.index + 1}
                         </label>
-                        <div className="contenidoItem__text">
+                        <div className="contenidoItemEstudiante__text">
                             {props.titulo}
                         </div>
                     </div>
-                    <div className="contenidoItem__row">
-                        <label className="contenidoItem__label">
-                            Enlace :
-                        </label>
-                        <div className="contenidoItem__text">
-                            {props.enlace}
+                    {
+                        (props.tipo !== 'whatsapp' && props.tipo !== 'zoom' && props.tipo !== 'classroom') &&
+                        <div className="contenidoItem__row">
+                            <label className="contenidoItemEstudiante__label">
+                                Descripción :
+                                </label>
+                            <div
+                                className="contenidoItemEstudiante__text"/>
+                                {props.descripcion}
+                            <div/>
                         </div>
-                    </div>
+                    }
+                    {
+                        props.tipo !== 'cuestionario' &&
+                        <div className="contenidoItem__row">
+                            <label className="contenidoItemEstudiante__label">
+                                Enlace :
+                            </label>
+                            <p className="contenidoItemEstudiante__text">
+                                {props.enlace}
+                            </p>
+                        </div>
+                    }
                 </div>
             </div>
             <div className="contenidoItem__opciones">
+                {
+                    (props.tipo !== 'cuestionario' && props.tipo !== 'whatsapp' && props.tipo !== 'zoom' && props.tipo !== 'classroom') &&
+                    <div className="contenidoItem__img">
+                        <img src={ver} alt="borrar"
+                            onClick={handleClick}
+                        />
+                    </div>
+                }
                 {
                     (props.tipo == 'whatsapp' || props.tipo == 'zoom' || props.tipo == 'classroom') &&
                     <div className="contenidoItem__img">
@@ -85,11 +113,19 @@ const ContenidoItemEstudiante = (props) => {
                     </div>
                 }
                 {
-                    (props.tipo !== 'whatsapp' && props.tipo !== 'zoom' && props.tipo !== 'classroom') &&
+                    (props.tipo == 'cuestionario' && props.estado === true) &&
                     <div className="contenidoItem__img">
-                        <img src={ver} alt="borrar"
-                            onClick={handleClick}
-                        />
+                        <Link
+                            to={`/cuestionario/${props.idContenido}/${props.idTrimestre}`}
+                        >
+                            <img src={ver} alt="editar" />
+                        </Link>
+                    </div>
+                }
+                {
+                    (props.tipo == 'cuestionario' && props.estado === false) &&
+                    <div className="texto__rojo">
+                        Ya no se permite acceder a esta Evaluación
                     </div>
                 }
             </div>

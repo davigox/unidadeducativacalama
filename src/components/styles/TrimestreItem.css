@@ -47,18 +47,34 @@
 }
 .TrimestreItem__contenido{
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+    background: #A573CC;
 }
 @media screen and (min-width:320px){
+    .TrimestreItem__head{
+        display: flex;
+        flex-direction: column;
+    }
     .TrimestreItem__titulo{
-        font-size: .7em;
+        font-size: 1em;
     }
 }
 @media screen and (min-width:400px){
+    .TrimestreItem__head{
+        display: flex;
+        flex-direction: row;
+    }
     .TrimestreItem__titulo{
-        font-size: .7em;
+        font-size: 1em;
     }
 }
 @media screen and (min-width:600px){
+    
     .TrimestreItem__titulo{
         font-size: .8em;
     }

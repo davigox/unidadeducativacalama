@@ -25,8 +25,9 @@ const GeneralList = (props) => {
             curso: curso
         })
     }
+    let unsubscribe;
     const buscarEstudiantes = async (curso) => {
-        await db.collection('users').orderBy('apellidoPaterno').where('curso', '==', curso).where('rol', '==', 'estudiante').get().then((querySnapshot) => {
+        unsubscribe = await db.collection('users').orderBy('apellidoPaterno').where('curso', '==', curso).where('rol', '==', 'estudiante').onSnapshot((querySnapshot) => {
             const docs = [];
             querySnapshot.forEach(doc => {
                 docs.push({ ...doc.data(), idUsuario: doc.id });
@@ -52,13 +53,14 @@ const GeneralList = (props) => {
         doc.addImage(logo, 'PNG', 15, 15, 10, 10)
         doc.setLineWidth(0.5);
         doc.line(15, 27, 195, 27);
-        
+        const fecha = new Date();
         doc.setFontSize(12)
         doc.setTextColor(100)
         doc.text(`Curso: ${state.curso}`,20,32)
         // doc.text(`Materia: ${curso.materia}`,20,37)
         // doc.text(`Docente: ${curso.docente}`,20,42)
         doc.setTextColor(30)
+        doc.text(`Fecha de impresión: ${fecha.getDate()}/${fecha.getMonth()+1}/${fecha.getFullYear()}`, 105, 32,);
         doc.text("Lista de Estudiantes", 15, 37);
         const col = ['Nro.','Apellido Paterno', 'Apellido Materno', 'Nombres', 'Celular', 'Correo']
         const lista = obtenerListaPdf()
@@ -88,7 +90,7 @@ const GeneralList = (props) => {
                 {(state.data.length >= 1) ?
                     state.data.map((doc, index) => (
                         <ListaItem
-                            key={index}
+                            key={doc.idUsuario}
                             index={index+1}
                             apellidoPaterno={doc.apellidoPaterno}
                             apellidoMaterno={doc.apellidoMaterno}
@@ -98,6 +100,8 @@ const GeneralList = (props) => {
                             email={doc.email}
                             celular={doc.celular}
                             tutor={doc.tutor}
+                            rol={doc.rol}
+                            estado={doc.estado}
                         />
                     ))
                     : <div>

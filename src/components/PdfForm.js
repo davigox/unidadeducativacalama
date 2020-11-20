@@ -100,7 +100,7 @@ const PdfForm = (props) => {
         <div className="PdfForm">
             <div className="PdfForm__header">
                 <div className="PdfForm__titulo">
-                    Envia un archivo de Google Drive
+                    Envía un archivo de Google Drive
                     </div>
             </div>
             <form

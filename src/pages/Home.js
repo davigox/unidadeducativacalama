@@ -47,6 +47,15 @@ const Home = ({ user }) => {
             tutoriales: false,
         })
     }
+    const handleChangeTutoriales = (e) => {
+        setState({
+            ...state,
+            institucion: false,
+            horario: false,
+            comunicado: false,
+            tutoriales: !state.tutoriales,
+        })
+    }
 
     return (
         <React.Fragment>
@@ -78,7 +87,7 @@ const Home = ({ user }) => {
                             Comunicados
                         </div>
                     </div>
-                    <div className="MenuHome__opcion">
+                    <div onClick={handleChangeTutoriales} className="MenuHome__opcion">
                         <div className="MenuHome__cuadro cuadroVioleta">
                             <img src={galeria} alt="institucion" />
                         </div>
@@ -107,14 +116,131 @@ const Home = ({ user }) => {
 
                 />
             }
-            {/* <VideoContainer
-                titulo="TUTORIAL: PROGRAMAS DE PIZARRAS VIRTUALES PARA PROFESORES"
-                enlace="https://www.youtube.com/embed/rpbmri9CihQ"
-                autor="Autor: davigox.com"
-                fecha="Fecha: 09/09/20"
-                hora="Hora: 11:25 AM"
-
-            /> */}
+            {
+                state.tutoriales &&  (
+                    <>
+                        <VideoContainer
+                            titulo="000 Crear Cuenta de estudiante(Solo para Estudiantes)"
+                            enlace="https://www.youtube.com/embed/AYyj7PXydNo"
+                            autor="Autor: davigox.com"
+                            fecha="Fecha: 11/11/20"
+                            hora="Hora: 11:25 AM"
+                        />
+                        <VideoContainer
+                            titulo="000 Crear Cuenta (Solo para docentes)"
+                            enlace="https://www.youtube.com/embed/ka5VDGQiSBU"
+                            autor="Autor: davigox.com"
+                            fecha="Fecha: 11/11/20"
+                            hora="Hora: 11:25 AM"
+                        />
+                        <VideoContainer
+                            titulo="001 Iniciar Sesión y Cerrar Sesión"
+                            enlace="https://www.youtube.com/embed/AbL8ktsFakM"
+                            autor="Autor: davigox.com"
+                            fecha="Fecha: 11/11/20"
+                            hora="Hora: 11:25 AM"
+                        />
+                        <VideoContainer
+                            titulo="002 Crear Cursos"
+                            enlace="https://www.youtube.com/embed/PKUfJOoGIAY"
+                            autor="Autor: davigox.com"
+                            fecha="Fecha: 11/11/20"
+                            hora="Hora: 11:25 AM"
+                        />
+                        <VideoContainer
+                            titulo="003 Crear Trimestres"
+                            enlace="https://www.youtube.com/embed/Xt5PWhBMviY"
+                            autor="Autor: davigox.com"
+                            fecha="Fecha: 11/11/20"
+                            hora="Hora: 11:25 AM"
+                        />
+                        <VideoContainer
+                            titulo="004 Compartir grupo de whatsapp"
+                            enlace="https://www.youtube.com/embed/CXDwnScjqCg"
+                            autor="Autor: davigox.com"
+                            fecha="Fecha: 11/11/20"
+                            hora="Hora: 11:25 AM"
+                        />
+                        <VideoContainer
+                            titulo="005 Compartir clase classroom"
+                            enlace="https://www.youtube.com/embed/IIFNu9PxSi0"
+                            autor="Autor: davigox.com"
+                            fecha="Fecha: 11/11/20"
+                            hora="Hora: 11:25 AM"
+                        />
+                        <VideoContainer
+                            titulo="006 Compartir reunión Zoom"
+                            enlace="https://www.youtube.com/embed/dmLIdFyr5ws"
+                            autor="Autor: davigox.com"
+                            fecha="Fecha: 11/11/20"
+                            hora="Hora: 11:25 AM"
+                        />
+                        <VideoContainer
+                            titulo="007 Vista estudiante"
+                            enlace="https://www.youtube.com/embed/0c_8_AO_BAA"
+                            autor="Autor: davigox.com"
+                            fecha="Fecha: 11/11/20"
+                            hora="Hora: 11:25 AM"
+                        />
+                        <VideoContainer
+                            titulo="008 Compartir video de Youtube"
+                            enlace="https://www.youtube.com/embed/7Vo3gk1YlF8"
+                            autor="Autor: davigox.com"
+                            fecha="Fecha: 11/11/20"
+                            hora="Hora: 11:25 AM"
+                        />
+                        <VideoContainer
+                            titulo="009 Evaluaciones de contenidos"
+                            enlace="https://www.youtube.com/embed/drSVCeU4eYk"
+                            autor="Autor: davigox.com"
+                            fecha="Fecha: 11/11/20"
+                            hora="Hora: 11:25 AM"
+                        />
+                        <VideoContainer
+                            titulo="010 Realizar preguntas y calificar preguntas"
+                            enlace="https://www.youtube.com/embed/QLUwOVEU6YM"
+                            autor="Autor: davigox.com"
+                            fecha="Fecha: 11/11/20"
+                            hora="Hora: 11:25 AM"
+                        />
+                        <VideoContainer
+                            titulo="011 Realizar respuestas y calificar respuestas"
+                            enlace="https://www.youtube.com/embed/xAum76lmgY4"
+                            autor="Autor: davigox.com"
+                            fecha="Fecha: 11/11/20"
+                            hora="Hora: 11:25 AM"
+                        />
+                        <VideoContainer
+                            titulo="012 Realizar aportes y calificar aportes"
+                            enlace="https://www.youtube.com/embed/lN8CJ7I6qvU"
+                            autor="Autor: davigox.com"
+                            fecha="Fecha: 11/11/20"
+                            hora="Hora: 11:25 AM"
+                        />
+                        <VideoContainer
+                            titulo="013 Realizar apuntes y calificar apuntes"
+                            enlace="https://www.youtube.com/embed/sBmXdSf8iVY"
+                            autor="Autor: davigox.com"
+                            fecha="Fecha: 11/11/20"
+                            hora="Hora: 11:25 AM"
+                        />
+                        <VideoContainer
+                            titulo="014 Realizar tareas y calificar tareas"
+                            enlace="https://www.youtube.com/embed/_AKJihwx3rY"
+                            autor="Autor: davigox.com"
+                            fecha="Fecha: 11/11/20"
+                            hora="Hora: 11:25 AM"
+                        />
+                        <VideoContainer
+                            titulo="015 Generar calificaciones trimestrales"
+                            enlace="https://www.youtube.com/embed/vZelpq_Jz94"
+                            autor="Autor: davigox.com"
+                            fecha="Fecha: 11/11/20"
+                            hora="Hora: 11:25 AM"
+                        />
+                    </>
+                )
+            }
 
             <Footer />
         </React.Fragment>

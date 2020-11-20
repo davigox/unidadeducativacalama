@@ -28,7 +28,7 @@ const MisCursosDocente = (props) => {
         return unsubscribe;
     }, [])
     if (usuarioLogeado.rol !== 'docente') {
-        return <h1 className="error">Ups! No tienes acceso a estos datos.</h1>
+        return <h1 className="noacceso">Ups! No tienes acceso a estos datos.</h1>
     } else {
         return (
             <div className="misCursosDocente">

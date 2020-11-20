@@ -86,6 +86,8 @@ const NotaForm = (props) => {
                                 aportes: 0,
                                 promedioNotas: 0,
                                 notas: 0,
+                                promedioEvaluaciones: 0,
+                                evaluaciones: 0,
                             })
                             console.log('Participacion creada correctamente')
                             await db.collection('notasCursos').doc(props.idCurso).collection('notas').doc().set({
@@ -154,7 +156,7 @@ const NotaForm = (props) => {
                                 className="PreguntaForm__form"
                             >
                                 <input
-                                    className="PreguntaForm__input"
+                                    className="NotaForm__input"
                                     type="text"
                                     name="nota"
                                     value={state.nota}

@@ -1,28 +1,61 @@
 .EstudianteItem{
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     width: fit-content;
-    border:.5px solid #d3d1e2;
-    border-radius: 10px;
+    /* border:.5px solid #d3d1e2; */
+    border-radius: 1px;
     background: #ffffff;
-    box-shadow:  0px 1px 5px #ffffff;
+    /* box-shadow:  0px 1px 5px #ffffff; */
 }
 .EstudianteItem__header{
     display: flex;
     align-items: center;
+    height: 30px;
+}
+.EstudianteItem__datos{
+    display: flex;
+    align-items: center;
+    height: 70px;
 }
 .EstudianteItem__ico{
-    height: auto;
+    height: 100%;
+    width: 40px;
+    min-width: 40px;
     font-weight: 700;
-    font-size: 1.4em;
+    font-size: 1em;
+    border-right: 1px solid #D1D1D1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .EstudianteItem__ico img{
     width: 30px;
     height: 30px;
 }
+.EstudianteItem__nombres{
+    padding-left: 2px;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+    max-width: 250px;
+    height: 100%;
+    border-right: 1px solid #D1D1D1;
+}
 .EstudianteItem__column{
     box-sizing: border-box;
-    padding: 3px;
-    border-right: 1px solid #b6b1e0;
+    height: 100%;
+    font-weight: 700;
+    font-size: .8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 120px;
+    max-width: 120px;
+    border-right: 1px solid #D1D1D1;
    
 }
 .EstudianteItem__nombre{
@@ -33,11 +66,13 @@
 }
 .EstudianteItem__titulo{
     color: #1C1939;
+    font-size: 0.9em;
 
 }
 .EstudianteItem__numero{
     white-space: nowrap;
     color: #1a405f;
+    font-size: .9em;
 }
 .amarillo{
     background: #8bcbc8;
@@ -47,4 +82,7 @@
 }
 .celeste{
     background: #fdae84;
-}                        
+} 
+.cabecera{
+    background: #42A4ED;
+}                       

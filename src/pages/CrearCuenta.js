@@ -56,6 +56,7 @@ const CrearCuenta = (props) => {
                 email: state.email,
                 curso: state.curso,
                 celular: state.celular,
+                estado: 'habilitado',
                 codigo: codigo,
                 fecha: new Date(),
                 rol: valor,
@@ -68,6 +69,7 @@ const CrearCuenta = (props) => {
                     apellidoPaterno: state.apellidoPaterno.trim().toUpperCase(),
                     apellidoMaterno: state.apellidoMaterno.trim().toUpperCase(),
                     rol: valor,
+                    estado: 'habilitado',
                     curso: state.curso,
                     codigo: codigo,
                 })

@@ -73,17 +73,21 @@ const Navbar = (props) => {
                     </div>)
                     : <Link to="/login" className="navbar__button">Iniciar Sesión</Link>
                 }
-                <div className="hamburger" onClick={handleClick}>
-                    <div className="line">
+                {
+                    usuarioLogeado.uid &&
+                    <div className="hamburger" onClick={handleClick}>
+                        <div className="line">
 
-                    </div>
-                    <div className="line">
+                        </div>
+                        <div className="line">
 
-                    </div>
-                    <div className="line">
+                        </div>
+                        <div className="line">
 
+                        </div>
                     </div>
-                </div>
+
+                }
                 <div onClick={handleClick} className={state.isCliked ? "nav-links nav-links--open" : "nav-links"}>
                     <div className="nav-links__opciones">
                         {
@@ -105,6 +109,20 @@ const Navbar = (props) => {
                             <Link to={`/cargarusuarios`} className="navlinks__opcion" >
                                 <img src={miscursos} alt="Miscuros" />
                                 <div>Cargar Usuarios</div>
+                            </Link>
+                        }
+                        {
+                            usuarioLogeado.rol === 'administrador' &&
+                            <Link to={`/cursosdocenteslist`} className="navlinks__opcion" >
+                                <img src={cursos} alt="Miscuros" />
+                                <div>Cursos de Docentes</div>
+                            </Link>
+                        }
+                        {
+                            usuarioLogeado.rol === 'administrador' &&
+                            <Link to={`/opcionessistema`} className="navlinks__opcion" >
+                                <img src={cursos} alt="Miscuros" />
+                                <div>Opciones de Sistema</div>
                             </Link>
                         }
                         {
@@ -130,9 +148,9 @@ const Navbar = (props) => {
                         }
                         {
                             usuarioLogeado.usuario !== '' &&
-                            <div 
-                            onClick={handleLogout}
-                            className="navlinks__opcion">
+                            <div
+                                onClick={handleLogout}
+                                className="navlinks__opcion">
                                 <img src={logout} alt="Miscuros" />
                                 <div>Cerrar Sesión</div>
                             </div>
